@@ -1,0 +1,352 @@
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm{
+  --bs-gutter-x: 1em
+}
+p {
+  margin-block-start: 0;
+  // margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.75;
+}
+body{
+  padding-top: 7vh;
+}
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #19092f;
+}
+.active-color{
+  color: #1bf3f6;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.main{
+  background-color: #19092f;
+}
+section{
+  margin: 0px auto;
+  color: #ffffff;
+  // padding-top: 5vh;
+  font-size: 14px;
+}
+.banner{
+  height: 30vh;
+  background: url(../assets/images/banner_02.jpg) center no-repeat;
+  background-size:cover;
+  position: relative;
+  a{
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    height: 5.5vh;
+    width: 45vw;
+  }
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  position: relative;
+  height: 8.2vh;
+  margin-bottom: 4vh;
+  width: 95vw;
+  background: url('../assets/images/img_0.png') center no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.title {
+  position: relative;
+  margin-top: 2.5vh;
+  max-width: 654px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  letter-spacing: 0.32px;
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 18px;
+}
+.intro-desc{
+  padding: 0 2vw;
+  margin: 2vh 0;
+}
+.background{
+  font-size: 12px;
+  color: #1bf6f9;
+}
+
+/*  */
+.system-intro{
+  padding: 10px;
+  dt{
+    background: linear-gradient(to right, #0b21ab, #221247, #19092f);
+    border-radius: 5px;
+    padding: 1.2vh 3vw;
+    font-size: 18px;
+  }
+  dd{
+    margin: 2vh;
+  }
+}
+.support-con{
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  dt{
+    background: url(../assets/images/img_4.png) center no-repeat;
+    width: 60vw;
+    padding: 1.2vh 10vw;
+    background-size: 100%;
+    text-align: left;
+    padding-left: 10vw;
+  }
+  dd{
+    display: flex;
+    align-items: center;
+    background-size: 100%;
+    width: 100%;
+    // height: 44.8vh;
+    line-height: 2;
+    font-size: 14px;
+  }
+}
+.group-con{
+  img{
+    max-width: 100%;
+  }
+}
+.qrcode{
+  padding-right: 2vw;
+  img{
+    max-width: 80%;
+  }
+}
+// 
+.box{
+  color: #ffffff;
+  width: 96%;
+  margin: 0 auto;
+  h3{
+    position: relative;
+    padding-bottom: 10px;
+    color: #1bf6f9;
+    font-size: 18px;
+    &::before{
+      content: '';
+      display: block;
+      width: 20%;
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      background-color: #473a59;
+    }
+  }
+  a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  p{
+    font-size: 14px;
+    word-break: break-all;
+  }
+}
+
+// 嘉宾
+.experts{
+  width: 100%;
+  padding: 10px;
+  &-avatar{
+    img{
+      width: 32vw;
+      max-width: 100%;
+    }
+  }
+  &-name{
+    color: #1be0e4;
+    padding: 5px 0;
+    border-radius: 40px;
+    background: linear-gradient(to top, #650f79, #19092f);
+    font-size: 18px;
+  }
+  dd{
+    font-size: 12px;
+  }
+}
+.footer{
+  background-color: #13181f;
+  padding: 20px 0;
+  color: #9b9191;
+  margin-top: 50px;
+  font-size: 12px;
+}
+.footer-desc{
+  margin: 0 auto;
+  justify-content: center;
+}
+.footer p{
+  line-height: 1.3;
+}
+.footer a{
+  color: #9b9191;
+  text-decoration: none;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+    // No media query since this is the default in Bootstrap 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  section{
+    padding-top: 80px;
+    font-size: 22px;
+  }
+  .banner{
+    background-image: url(../assets/images/banner.jpg);
+    height: 31vw;
+    background-size: 100%;
+    position: relative;
+    a{
+      position: absolute;
+      top: 18vw;
+      left: 0;
+      transform: translate3d(-50%, 0, 0);
+      height: 20vh;
+      width: 65vw;
+    }
+  }
+  .support-con{
+    dt{
+      width: 100%;
+      padding: 2vh 0;
+      text-align: center;
+    }
+    dd{
+      font-size: 16px;
+    }
+  }
+  .section-title{
+    height: 82px;
+    width: 666px;
+    .title{
+      font-size: 32px;
+      height: 30px;
+      line-height: 32px;
+    }
+  }
+  .system-intro{
+    padding: 10px;
+    dt{
+      padding: 15px 20px;
+      font-size: 24px;
+    }
+    dd{
+      margin: 30px 20px;
+    }
+  }
+  .group-con{
+    img{
+      width: 50%;
+    }
+  }
+  .box h3{
+    font-size: 30px;
+  }
+  .box p{
+    font-size: 22px;
+  }
+  .footer{
+    font-size: 14px;
+  }
+  .footer-desc{
+    width: 1069px;
+  }
+  .background{
+    font-size: 18px;
+  }
+
+}
+@media (min-width: 992px) {
+  .support-con{
+    margin: 80px auto 0;
+    dl{
+      padding: 10px;
+    }
+    dt{
+      height: 69px;
+      background-image: url(../assets/images/img_6.png);
+      text-align: left;
+      line-height: 69px;
+      width: 80%;
+      padding: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
+    dd{
+      width: 100%;
+      height: 320px;
+      background: url(../assets/images/img_7.png) top center no-repeat;
+      background-size: contain;
+      font-size: 18px;
+      padding: 0 7vw 0 5vw;
+    }
+  }
+  .experts{
+    margin: 40px;
+    padding: 0 60px;
+    &-avatar{
+      width: 80%;
+      // height: 400px;
+      margin: 0 auto;
+      img{
+        max-width: 100%;
+      }
+    }
+    &-name{
+      font-size: 28px;
+    }
+    dd{
+      font-size: 20px;
+      padding: 0 45px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .support-con{
+    width: 1120px;
+    margin: 80px auto;
+    dl{
+      padding: 10px;
+    }
+    dt{
+      height: 69px;
+      background-image: url(../assets/images/img_6.png);
+      text-align: left;
+      line-height: 69px;
+      width: 80%;
+      padding: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
+    dd{
+      width: 100%;
+      height: 400px;
+      background: url(../assets/images/img_7.png) center no-repeat;
+      background-size: 100%;
+      font-size: 20px;
+      padding: 0 70px 0 30px;
+    }
+  }
+  .background{
+    font-size: 18px;
+  }
+}
