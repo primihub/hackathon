@@ -5,16 +5,8 @@
 </template>
 
 <script>
-// import { isMobile } from "@/utils";
 export default {
-  name:"App",
-  mounted(){
-    // if(isMobile()){
-    //   this.$router.push('/about')
-    // }else{
-    //   this.$router.push('/')
-    // }
-  },
+  name:"App"
 }
 </script>
 

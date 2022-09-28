@@ -4,11 +4,21 @@
 }
 p {
   margin-block-start: 0;
-  // margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   line-height: 1.75;
 }
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 1em;
+}
+
 body{
   padding-top: 7vh;
 }
@@ -101,6 +111,7 @@ section{
   display: flex;
   justify-content: center;
   margin-top: 2vh;
+  padding: 10px;
   dt{
     background: url(../assets/images/img_4.png) center no-repeat;
     width: 60vw;
@@ -117,6 +128,7 @@ section{
     // height: 44.8vh;
     line-height: 2;
     font-size: 14px;
+    margin: 2vh;
   }
 }
 .group-con{
