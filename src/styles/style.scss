@@ -49,13 +49,17 @@ section{
   background: url(../assets/images/banner_02.jpg) center no-repeat;
   background-size:cover;
   position: relative;
-  a{
+  .container{
+    position: relative;
+  }
+  .button{
     position: absolute;
     top: 20vh;
     left: 50%;
     transform: translate3d(-50%, 0, 0);
     height: 5.5vh;
     width: 45vw;
+    border: none;
   }
 }
 .section-title {
@@ -226,7 +230,7 @@ section{
     height: 31vw;
     background-size: 100%;
     position: relative;
-    a{
+    .button{
       position: absolute;
       top: 18vw;
       left: 0;

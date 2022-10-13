@@ -2,7 +2,9 @@
   <div class="main">
     <NavBar />
     <div class="banner">
-      <a href="#contact" title="点击报名"></a>
+      <div class="container">
+        <div class="button" @click="showTips"></div>
+      </div>
     </div>
     <div class="container">
       <section class="intro" id="intro">
@@ -221,9 +223,10 @@
       <hr>
       <div class="box text-left">
         <h3>合作伙伴</h3>
-        <p>指导单位：<a href="http://nscc.hnu.edu.cn/">长沙超算中心、</a>
+        <p>
+          <!-- 指导单位：<a href="http://nscc.hnu.edu.cn/">长沙超算中心、</a>
           <a href="http://xjxq.hunan.gov.cn/">湘江新区管委会、</a>
-          <a href="https://www.buaa.edu.cn/">北京航空航天大学</a><br>
+          <a href="https://www.buaa.edu.cn/">北京航空航天大学</a><br> -->
         主办单位：<a href="https://www.csdn.net/">CSDN&</a><a href="https://www.openmpc.com/article/374">OpenMPC</a><br>
         支持单位：<a href="http://www.datawhale.club/">Datawhale开源社区、</a><a href="https://www.primihub.com">北京原语科技有限公司</a><br>
         </p>
@@ -238,21 +241,32 @@
         </b-col>
       </b-row> -->
     </div>
+  <ToolTip text="报名即将开始" v-if="showTip" :visible="showTip"/>
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue';
+import ToolTip from '@/components/ToolTip.vue';
 
 export default {
   name: 'PcIndex',
   components:{
-    NavBar
+    NavBar,
+    ToolTip
   },
   data() {
     return {
-      property: 'value',
+      showTip: false,
     };
   },
+  methods:{
+    showTips(){
+      this.showTip = true
+      setTimeout(() => {
+        this.showTip = false
+      }, 2000);
+    }
+  }
 }
 </script>
