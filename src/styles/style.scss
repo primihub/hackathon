@@ -215,6 +215,15 @@ section{
   color: #9b9191;
   text-decoration: none;
 }
+a.nocolor:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a.nocolor:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
 
 
 // Extra small devices (portrait phones, less than 576px)
