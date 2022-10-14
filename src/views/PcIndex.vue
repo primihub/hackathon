@@ -42,7 +42,13 @@
           <dl>
             <dt>3.大赛定位</dt>
             <dd>
-              基于隐私计算技术的开放创新应用大赛，不限应用方向，鼓励应用开源技术和技术创新。
+              <p class="summary text-left">
+              <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 是基于安全多方计算、联邦学习、同态加密、可信计算等的隐私计算技术，结合区块链等研发的开源隐私计算应用平台。
+                <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 秉承保护数据在应用过程中的隐私安全，实现“数据可用不可见”。 产品平台涵盖了匿踪查询、隐私求交、联合建模、联合统计、算法容器管理、数据资源管理、数据确权与定价、异构平台互联互通等主要应用服务功能。
+              </p>
+              <p class="summary text-left">
+              本次比赛，邀请所有参赛团队基于 <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 技术及其服务进行开发，期待通过本场大赛，为隐私计算技术的推进和应用的发展提供新思路。
+              </p>
             </dd>
           </dl>
           <dl>
@@ -54,7 +60,12 @@
           <dl>
             <dt>5.评比规则</dt>
             <dd>
-              参赛选手或者团队在线上提交，赛题主办方组织专家评审，择优评出一二三等奖若干名。
+              <p class="summary text-left">
+              本次比赛分为初赛、复赛，初赛阶段只需要提交方案设计即可，具体形式不作限制，例如：文档、PPT、示例代码等待。通过专家评委的审核后，可以得到主办方提供的周边大礼包，并获得参加复赛的资格。
+              </p>
+              <p class="summary text-left">
+                凡进入复赛的团队（个人），需要在指定时间内完成代码的编写、测试，确保功能完整、可用。参赛选手在线上提交，主办方组织专家评审，择优评出一二三等奖若干名。
+              </p>
             </dd>
           </dl>
           <dl>
@@ -80,7 +91,7 @@
           <dl>
             <dt>2.提交方式</dt>
             <dd>
-              参赛团队按报名审核提交材料清单，按要求准备材料后压缩成zip或rar文档进行提交，提交网址为：（陆续开放）
+              参赛团队按报名审核提交材料清单，按要求准备材料后压缩成 zip 文档进行提交，提交网址为：（陆续开放）
             </dd>
           </dl>
           <dl>
@@ -228,7 +239,7 @@
           <a href="http://xjxq.hunan.gov.cn/">湘江新区管委会、</a>
           <a href="https://www.buaa.edu.cn/">北京航空航天大学</a><br> -->
         主办单位：<a href="https://www.csdn.net/">CSDN&</a><a href="https://www.openmpc.com/article/374">OpenMPC</a><br>
-        支持单位：<a href="http://www.datawhale.club/">Datawhale开源社区、</a><a href="https://www.primihub.com">北京原语科技有限公司</a><br>
+        合作社区：<a href="http://www.datawhale.club/">Datawhale开源社区、</a><a href="https://www.primihub.com">北京原语科技有限公司</a><br>
         </p>
       </div>
     </div>
