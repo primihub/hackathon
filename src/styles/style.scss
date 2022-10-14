@@ -178,23 +178,79 @@ section{
 
 // 嘉宾
 .experts{
-  width: 100%;
-  padding: 10px;
+  width: 40%;
+  overflow: hidden;
+  position: relative;
+  font-size: 16px;
+  margin: 10px;
+  &-container{
+    display: flex;
+    justify-content: center;
+  }
   &-avatar{
     img{
-      width: 32vw;
       max-width: 100%;
     }
   }
   &-name{
-    color: #1be0e4;
-    padding: 5px 0;
-    border-radius: 40px;
-    background: linear-gradient(to top, #650f79, #19092f);
+    color: #fff;
+    padding: 5px 20px;
     font-size: 18px;
   }
-  dd{
-    font-size: 12px;
+  
+  .experts-info{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    p{
+      padding: 0 20px;
+    }
+  }
+}
+
+.partners2{
+  // background-color: #f7f8f9;
+  color: #ffffff;
+  padding-bottom: 150px;
+  .section-title{
+    color: #ffffff;
+    padding-top: 20px;
+  }
+  padding-bottom: 50px;
+  .title{
+    color: #fff;
+    margin: 0 auto;
+  }
+  .partners-item{
+    padding: 50px 0 0px;
+  }
+  img{
+    width: 200px;
+    // height: 80px;
+    background-color: #f7f8f9;
+    margin: 20px;
+  }
+  .background{
+    color: #1bf6f9;
+  }
+  h3{
+    font-size: 18px;
+    margin-bottom: 30px;
+    // margin: 30px;
+  }
+}
+.experts-info{
+  width: 100%;
+  height: 100%;
+  top: 80%;
+  // display: none;
+  font-size: 14px;
+  transition: all .3s ease-in;
+  background-image: linear-gradient(to right, rgb(36, 35, 106) 0%, rgba(36, 35, 106, .6) 100%);
+  &.show{
+    top: 0!important;
   }
 }
 .footer{
@@ -202,7 +258,7 @@ section{
   padding: 20px 0;
   color: #9b9191;
   margin-top: 50px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .footer-desc{
   margin: 0 auto;
@@ -293,9 +349,6 @@ section{
 @media (min-width: 992px) {
   .support-con{
     margin: 80px auto 0;
-    dl{
-      padding: 10px;
-    }
     dt{
       height: 69px;
       background-image: url(../assets/images/img_6.png);
@@ -316,22 +369,29 @@ section{
     }
   }
   .experts{
-    margin: 40px;
-    padding: 0 60px;
+    width: 260px;
+    height: 280px;
+    margin: 40px 20px;
+    position: relative;
+    &:hover .experts-info{
+      top: 0;
+    } 
     &-avatar{
-      width: 80%;
-      // height: 400px;
+      width: 100%;
       margin: 0 auto;
+      font-size: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       img{
         max-width: 100%;
       }
     }
     &-name{
       font-size: 28px;
-    }
-    dd{
-      font-size: 20px;
-      padding: 0 45px;
+      background-image: linear-gradient(to right, rgb(36, 35, 106) 0%, rgba(36, 35, 106, 0) 100%);
     }
   }
 }

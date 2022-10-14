@@ -162,33 +162,17 @@
           <span class="title">评审专家</span>
           <span class="background">Evaluation Experts</span>
         </div>
-        <b-row class="text-center justify-content-center">
-          <b-col cols="6" sm="5" class="text-center">
-            <dl class="experts">
-              <dt class="experts-avatar">
-                <img src="../assets/images/fanjingjing.png" alt="范晶晶">
-                <p class="experts-name">范晶晶</p>
-              </dt>
-              <dd class="text-left">
-                <p>科鲸CEO<br>
-                开源组织Datawhale发起人<br>
-                开源社成员</p>
-              </dd>
-            </dl>
-          </b-col>
-          <b-col cols="6" sm="5">
-            <dl class="experts">
-              <dt class="experts-avatar">
-                <img src="../assets/images/qiangfeng.png" alt="强锋">
-                <p class="experts-name">强锋</p>
-              </dt>
-              <dd class="text-left">
-                <p>微言科技CTO<br>
-                曾任中国工商银行大数据与人工智能实验室资深数据科学家和联邦学习团队负责人</p>
-              </dd>
-            </dl>
-          </b-col>
-        </b-row>
+        <div class="experts-container">
+         <div cols="5" sm="3" class="experts" v-for="(item,index) in experts" :key="index">
+            <div class="experts-avatar" @mousemove="handleHover(index)" @mouseout="handleLeave">
+              <img :src="item.img" :alt="item.name">
+            </div>
+            <div class="experts-info text-left" :class="{'show': index === hoverIndex}">
+              <p class="experts-name">{{item.name}}</p>
+              <p v-html="item.desHtml"></p>
+            </div>
+          </div>
+        </div>
         <p>重量级评委待揭晓<br>……</p>
       </section>
       <section id="contact" class="box text-left">
@@ -221,25 +205,29 @@
         </p>
       </div>
       <hr>
-      <div class="box text-left">
-        <h3>合作伙伴</h3>
-        <p>
-          <!-- 指导单位：<a href="http://nscc.hnu.edu.cn/">长沙超算中心、</a>
-          <a href="http://xjxq.hunan.gov.cn/">湘江新区管委会、</a>
-          <a href="https://www.buaa.edu.cn/">北京航空航天大学</a><br> -->
-        主办单位：<a href="https://www.csdn.net/">CSDN&</a><a href="https://www.openmpc.com/article/374">OpenMPC</a><br>
-        支持单位：<a href="http://www.datawhale.club/">Datawhale开源社区、</a><a href="https://www.primihub.com">北京原语科技有限公司</a><br>
-        </p>
-      </div>
     </div>
+    <section class="partners2">
+      <div class="section-title">
+          <span class="title">合作伙伴</span>
+          <span class="background">Partners</span>
+        </div>
+      <div class="partners-item">
+        <h3>主办单位</h3>
+        <div class="img-container">
+          <img src="../assets/images/partner-logo-14.png" alt="CSDN">
+          <img src="../assets/images/openmpc-logo.png" alt="openmpc logo">
+        </div>
+      </div>
+      <div class="partners-item">
+        <h3>支持单位</h3>
+        <div class="img-container">
+          <img src="../assets/images/placeholder.png" alt="Datawhale开源社区">
+          <img src="../assets/images/logo.9479fd7d.png" alt="北京原语科技有限公司">
+        </div>
+      </div>
+    </section>
     <div class="text-center footer">
       <p>OpenMPC 版权所有 <a href="https://beian.miit.gov.cn/#/Integrated/index">冀ICP备16008495号-2</a></p>
-      
-      <!-- <b-row class="footer-desc">
-        <b-col cols="12" md="2" align-self="end">
-          <a href="https://beian.miit.gov.cn/#/Integrated/index">京ICP备2022006522号-1</a>
-        </b-col>
-      </b-row> -->
     </div>
   <ToolTip text="报名即将开始" v-if="showTip" :visible="showTip"/>
   </div>
@@ -258,7 +246,22 @@ export default {
   data() {
     return {
       showTip: false,
+      hoverIndex: -1,
+      experts:[
+        {
+          name: '范晶晶',
+          img: require('../assets/images/fanjingjing2.png'),
+          desHtml: '科鲸CEO<br>开源组织Datawhale发起人<br>开源社成员'
+        },
+        {
+          name: '强锋',
+          img: require('../assets/images/qiangfeng2.png'),
+          desHtml: '微言科技CTO<br>曾任中国工商银行大数据与人工智能实验室资深数据科学家和联邦学习团队负责人'
+        }
+      ]
     };
+  },
+  mounted(){
   },
   methods:{
     showTips(){
@@ -266,6 +269,13 @@ export default {
       setTimeout(() => {
         this.showTip = false
       }, 2000);
+    },
+    handleHover(index){
+      this.hoverIndex = index
+      console.log(index);
+    },
+    handleLeave(){
+      this.hoverIndex = ''
     }
   }
 }
