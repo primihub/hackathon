@@ -225,15 +225,26 @@
       <div class="partners-item">
         <h3>主办单位</h3>
         <div class="img-container">
-          <img src="../assets/images/partner-logo-14.png" alt="CSDN">
+          <img src="../assets/images/partner-logo-csdn.png" alt="CSDN">
           <img src="../assets/images/openmpc-logo.png" alt="openmpc logo">
         </div>
       </div>
       <div class="partners-item">
-        <h3>支持单位</h3>
+        <h3>合作伙伴</h3>
         <div class="img-container">
-          <img src="../assets/images/placeholder.png" alt="Datawhale开源社区">
-          <img src="../assets/images/logo.9479fd7d.png" alt="北京原语科技有限公司">
+          <img src="../assets/images/partner-logo-datawhale.png" alt="Datawhale 开源社区">
+          <img src="../assets/images/partner-logo-nebula-graph.png" alt="Nebula Graph">
+          <img src="../assets/images/partner-logo-juicefs.png" alt="JuiceFS">
+          <img src="../assets/images/partner-logo-mulan.png" alt="木兰开源社区">
+          <img src="../assets/images/partner-logo-kubesphere.svg" alt="木兰开源社区">
+          <img src="../assets/images/partner-logo-kaiyuanshe.png" alt="开源社">
+          <img src="../assets/images/placeholder.png" alt="Datawhale 开源社区">
+        </div>
+      </div>
+      <div class="partners-item">
+        <h3>赞助商</h3>
+        <div class="img-container">
+          <img src="../assets/images/partner-logo-primihub.png" alt="北京原语科技有限公司">
         </div>
       </div>
     </section>
