@@ -226,11 +226,29 @@ section{
   .partners-item{
     padding: 50px 0 0px;
   }
-  img{
-    width: 200px;
-    // height: 80px;
-    background-color: #f7f8f9;
-    margin: 20px;
+  .img-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vw;
+    img{
+      height: 8vh;
+      background-color: #fff;
+      margin: 2vw;
+      padding: 10px;
+    }
+  }
+  .placeholder-img{
+    display: inline-block;
+    background-color: #fff;
+    color: rgba(0, 0, 0, .2);
+    text-align: center;
+    width: 40vw;
+    height: 8vh;
+    line-height: 8vh;
+    vertical-align: middle;
+    margin: 2vw;
   }
   .background{
     color: #1bf6f9;
@@ -401,6 +419,20 @@ a.nocolor:visited {
     &-name{
       font-size: 28px;
       background-image: linear-gradient(to right, rgb(36, 35, 106) 0%, rgba(36, 35, 106, 0) 100%);
+    }
+  }
+  .partners2{
+    .img-container{
+      padding: 0 50px;
+      img{
+        height: 80px;
+        margin: 20px;
+      }
+      .placeholder-img{
+        height: 80px;
+        line-height: 80px;
+        width: 200px;
+      }
     }
   }
 }
