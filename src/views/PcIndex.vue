@@ -238,6 +238,9 @@
           <img src="../assets/images/partner-logo-mulan.png" alt="木兰开源社区">
           <img src="../assets/images/partner-logo-kubesphere.svg" alt="木兰开源社区">
           <img src="../assets/images/partner-logo-kaiyuanshe.png" alt="开源社">
+          <img src="../assets/images/partner-logo-cskefu.png" alt="春松客服开源社区">
+          <img src="../assets/images/partner-logo-osf2f.png" alt="开源面对面">
+          <img src="../assets/images/partner-logo-iotdb.png" alt="IoTDB">
           <div class="placeholder-img">欢迎加入</div>  
           <!-- <img src="../assets/images/placeholder.png" alt="Datawhale 开源社区"> -->
         </div>
