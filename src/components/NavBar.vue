@@ -13,6 +13,7 @@
               <b-dropdown-item href="https://live.csdn.net/room/zxff716/YCRz6iv6">Meetup</b-dropdown-item>
             </b-nav-item-dropdown>
             <b-nav-item :class="{active: activeIndex === index}" :href="`#${item.path}`" v-for="(item,index) in list" :key="index" :id="'navbar-links-'+ index" @click="handleClick(item.path,index)">{{item.name}}</b-nav-item>
+            <b-nav-item href="https://github.com/primihub/hackathon"><img class="github-logo" src="../assets/images/github-logo.png" alt="" srcset=""></b-nav-item>
           </b-navbar-nav>
         </b-collapse>
     </b-navbar>
@@ -87,6 +88,9 @@ export default {
     color: #fff;
   }
 }
+.navbar-nav{
+  align-items: center;
+}
 .navbar{
   display: flex;
   padding: 1vh 5vw;
@@ -128,6 +132,9 @@ export default {
 }
 .logo{
   height: 5vh;
+}
+.github-logo{
+  width: 40px;
 }
 ::v-deep .dropdown{
   a{
