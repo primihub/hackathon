@@ -133,9 +133,9 @@
         <b-row class="mb-5 align-item-center">
           <b-col cols="6" sm="6"  class="qrcode">
             <p>合作联系人：大赛小助手<br>
-              邮箱：zhengchao@openmpc.com
+              邮箱：<a href="mailto:shackathon@openmpc.com" target="_blank">hackathon@openmpc.com</a>
             </p>
-            <img src="../assets/images/zhengchao.png" alt="郑超">
+            <img src="../assets/images/qrcode-contact.png" alt="大赛小助手" width="198">
           </b-col>
         </b-row>
         
