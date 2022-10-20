@@ -177,8 +177,7 @@
           <img src="../assets/images/partner-logo-iotdb.png" alt="IoTDB">
           <img src="../assets/images/partner-logo-jina.png" alt="Jina AI">
           <img src="../assets/images/partner-logo-wasm-edge-runtime.png" alt="Wasm Edge Runtime">
-          <div class="placeholder-img">欢迎加入</div>  
-          <!-- <img src="../assets/images/placeholder.png" alt="Datawhale 开源社区"> -->
+          <div v-if="!expired" class="placeholder-img">欢迎加入</div>  
         </div>
       </div>
       <div class="partners-item">
@@ -223,7 +222,17 @@ export default {
       ]
     };
   },
-  mounted(){
+  computed:{
+    expired(){
+      const now = new Date().getTime()
+      const end = new Date('2022-10-24 23:59:59').getTime()
+      console.log((end - now) / 86400000+'天');
+      if(end-now < 0){
+        return true
+      }else{
+        return false
+      }
+    }
   },
   methods:{
     showTips(){
