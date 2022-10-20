@@ -15,7 +15,7 @@
         <div class="intro-desc">
           <p class="summary text-left">我国相继颁布施行的《网络安全法》、《数据安全法》、《个人信息保护法》，三部法律
           共同组成数据保护领域的“三驾马车”，构筑了一张新时代的数据安全防护网。同期，国务院办公厅在《要素市场化配置综合改革试点总体方案》里提出建立健全数据流通交易规则，探索<strong class="active-color">“原始数据不出域、数据可用不可见”</strong>的交易范式。隐私计算作为数据产业的核心基础设施，其全球市场规模有望突破数万亿。</p>
-          <p class="summary text-left"><strong class="active-color">OpenMPC联合CSDN在2022年程序员节开展隐私计算创新应用大赛。</strong>本大赛旨在通过竞赛方式，促进隐私计算技术应用与创新，促进更多的数据拥有方和数据使用方通过隐私计算发挥数据价值，促进数字产业与隐私计算结合应用，为打造数据要素流通高效协同的关键基础设施贡献科创力量，促进数据要素化创新应用、技术实践、培育优秀人才。</p>
+          <p class="summary text-left"><strong class="active-color">OpenMPC联合CSDN在2022年程序员节开展隐私计算 Hackathon。</strong>本大赛旨在通过竞赛方式，促进隐私计算技术应用与创新，促进更多的数据拥有方和数据使用方通过隐私计算发挥数据价值，促进数字产业与隐私计算结合应用，为打造数据要素流通高效协同的关键基础设施贡献科创力量，促进数据要素化创新应用、技术实践、培育优秀人才。</p>
         </div>
       </section>
       <section id="system">
@@ -27,7 +27,7 @@
           <dl>
             <dt>1.赛事启动</dt>
             <dd>
-              <p>第一届隐私计算创新应用大赛在1024程序员节启动。</p>
+              <p>第一届隐私计算 Hackathon 在1024程序员节启动。</p>
             </dd>
           </dl>
           <dl>
@@ -40,7 +40,7 @@
             </dd>
           </dl>
           <dl>
-            <dt>3.大赛定位</dt>
+            <dt>3.赛制说明</dt>
             <dd>
               <p class="summary text-left">
               <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 是基于安全多方计算、联邦学习、同态加密、可信计算等的隐私计算技术，结合区块链等研发的开源隐私计算应用平台。
@@ -110,64 +110,6 @@
         </div>
       </section>
 
-      <section id="support">
-        <div class="section-title">
-          <span class="title">参与/支持</span>
-          <span class="background">Participation/Support</span>
-        </div>
-        <b-row class="support-con text-left justify-content-between">
-          <b-col cols="11" sm="6" md="6">
-            <dl>
-              <dt>企业参与方式</dt>
-              <dd>
-                <ul>
-                  <li>算力参与</li>
-                  <li>费用资助（大赛奖金和定制化纪念品）</li>
-                  <li>大赛数据集提供</li>
-                  <li>专家（智力）资源（培训和最终评审）</li>
-                  <li>隐私计算开源平台</li>
-                </ul>
-              </dd>
-          </dl>
-          </b-col>
-          <b-col cols="11" sm="6" >
-            <dl>
-              <dt>企业所得</dt>
-              <dd>
-                <ul>
-                  <li>商机对接</li>
-                  <li>开源项目促活：引导练习实践贡献开发者加入到开源官方社区</li>
-                  <li>人才信息：报名该企业所冠名赛道的参赛者基本资料</li>
-                </ul>
-              </dd>
-            </dl>
-          </b-col>
-          <b-col cols="11" sm="6">
-            <dl>
-              <dt>高校支持</dt>
-              <dd>
-                <ul>
-                  <li>支持建设高校开源学习社团</li>
-                  <li>支持实习、论文等场景</li>
-                </ul>
-              </dd>
-            </dl>
-          </b-col>
-          <b-col cols="11" sm="6">
-            <dl>
-              <dt>政府/机构支持</dt>
-              <dd>
-                <ul>
-                  <li>大赛创新应用成果转化</li>
-                  <li>支持开源实践平台建设</li>
-                  <li>支持配套开源人才政策扶持</li>
-                  <li>支持竞赛项目资金补贴</li>
-                </ul>
-              </dd>
-            </dl>
-          </b-col>
-        </b-row>
-      </section>
        <section id="experts">
         <div class="section-title">
           <span class="title">评审专家</span>
@@ -190,18 +132,10 @@
         <h3>联系我们</h3>
         <b-row class="mb-5 align-item-center">
           <b-col cols="6" sm="6"  class="qrcode">
-            <p>合作联系人：郑超 <br>
-              电话：15968846980 <br>
+            <p>合作联系人：大赛小助手<br>
               邮箱：zhengchao@openmpc.com
             </p>
             <img src="../assets/images/zhengchao.png" alt="郑超">
-          </b-col>
-          <b-col cols="6" sm="6" class="qrcode" >
-            <p>合作联系人：熊婷<br>
-              电话：15057101054<br>
-              邮箱：xiongting@openmpc.com
-            </p>
-            <img src="../assets/images/xiongting.png" alt="熊婷">
           </b-col>
         </b-row>
         
@@ -242,6 +176,7 @@
           <img src="../assets/images/partner-logo-osf2f.png" alt="开源面对面">
           <img src="../assets/images/partner-logo-iotdb.png" alt="IoTDB">
           <img src="../assets/images/partner-logo-jina.png" alt="Jina AI">
+          <img src="../assets/images/partner-logo-wasm-edge-runtime.png" alt="Wasm Edge Runtime">
           <div class="placeholder-img">欢迎加入</div>  
           <!-- <img src="../assets/images/placeholder.png" alt="Datawhale 开源社区"> -->
         </div>

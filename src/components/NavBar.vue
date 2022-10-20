@@ -40,10 +40,6 @@ export default {
           path: 'rules'
         },
         {
-          name: '参与/支持',
-          path: 'support'
-        },
-        {
           name: '评审专家',
           path: 'experts'
         },
