@@ -116,15 +116,19 @@
           <span class="background">Evaluation Experts</span>
         </div>
         <div class="experts-container">
-         <div cols="5" sm="3" class="experts" v-for="(item,index) in experts" :key="index">
-            <div class="experts-avatar" @mousemove="handleHover(index)" @mouseout="handleLeave">
-              <img :src="item.img" :alt="item.name">
-            </div>
-            <div class="experts-info text-left" :class="{'show': index === hoverIndex}">
-              <p class="experts-name">{{item.name}}</p>
-              <p v-html="item.desHtml"></p>
-            </div>
-          </div>
+          <b-row class="justify-content-center">
+            <b-col cols="5" sm="3" v-for="(item,index) in experts" :key="index">
+              <div class="experts">
+                <div class="experts-avatar" @mousemove="handleHover(index)" @mouseout="handleLeave">
+                  <img :src="item.img" :alt="item.name">
+                </div>
+                <div class="experts-info text-left" :class="{'show': index === hoverIndex}">
+                  <p class="experts-name">{{item.name}}</p>
+                  <p v-html="item.desHtml"></p>
+                </div>
+              </div>
+            </b-col>
+          </b-row>
         </div>
         <p>重量级评委待揭晓<br>……</p>
       </section>
@@ -177,7 +181,7 @@
           <img src="../assets/images/partner-logo-iotdb.png" alt="IoTDB">
           <img src="../assets/images/partner-logo-jina.png" alt="Jina AI">
           <img src="../assets/images/partner-logo-wasm-edge-runtime.png" alt="Wasm Edge Runtime">
-          <div v-if="!expired" class="placeholder-img">欢迎加入</div>  
+          <div v-if="!isExpired" class="placeholder-img">欢迎加入</div>  
         </div>
       </div>
       <div class="partners-item">
@@ -214,15 +218,15 @@ export default {
         desHtml: '教授，博士，博士生导师。软件学院院长。<br/>大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
       }, {
         name: '丁勇',
-        img: require('../assets/images/guest-dingyong.jpeg'),
+        img: require('../assets/images/guest-dingyong.jpg'),
         desHtml: '教授，博导。<br/>广西密码学与信息安全重点实验室主任、福建“闽江学者讲座教授”，教育部网络空间安全教指委委员、中国密码学会高级会员，中国计算机学会区块链专委会常务委员。'
       }, {
         name: '孙溢',
-        img: require('../assets/images/guest-sunyi.jpeg'),
+        img: require('../assets/images/guest-sunyi.jpg'),
         desHtml: '北京邮电大学副教授。<br/>主要研究方向包括密码学、安全多方计算、区块链、大数据安全等。主持和参与多项国家863 、国家重点研发计划、国家自然科学基金青年基金、GF科研项目以及多项省部级科技项目和企业横向项目。'
       }, {
         name: '张志勇',
-        img: require('../assets/images/guest-zhangzhiyong.jpeg'),
+        img: require('../assets/images/guest-zhangzhiyong.jpg'),
         desHtml: '教授，博导。河南省特聘教授。<br/>现任河南科技大学网络空间安全应用河南省国际联合实验室主任、信息工程学院副院长。'
       }, {
         name: '茹志强',
@@ -230,7 +234,7 @@ export default {
         desHtml: '中国计算机学会 CCF 第十二届全国代表大会全国代表。<br/>CDA 首批技术合伙人，中国人工智能学会 CAAI 评审库专家，信用中国行业信用专家，中国信息通信研究院隐私计算联盟电信工作组联席组长。<br/>曾在阿里巴巴集团、大连万达集团、招商局集团控股子公司等多家单位任职，目前任中国移动通信集团信息技术中心（大数据中心）内设部门技术总监。'
       }, {
         name: '赵晨',
-        img: require('../assets/images/guest-zhaocheng.jpeg'),
+        img: require('../assets/images/guest-zhaocheng.jpg'),
         desHtml: '璞跃中国管理合伙人。<br/>他在中国带领专业团队致力于投资、加速本地科技创业项目成长，同时帮助海外顶尖科技创新企业进入中国并拓展国内市场。'
       }, {
         name: '李森',
@@ -244,17 +248,16 @@ export default {
         name: '强锋',
         img: require('../assets/images/qiangfeng2.png'),
         desHtml: '微言科技 CTO<br/>曾任中国工商银行大数据与人工智能实验室资深数据科学家和联邦学习团队负责人'
-      }]
+      }],
+      isExpired: false
     };
   },
-  computed:{
-    expired(){
-      return isExpired()
-    }
+  created(){
+    this.isExpired = this.checkDate()
   },
   methods:{
     signup() {
-      if(!isExpired()){
+      if(!this.isExpired){
         this.showTips()
       } else {
         window.open('https://m74hgjmt55.feishu.cn/share/base/form/shrcnsCkHGoP6Sz4pCNSxf2XL9b', '_blank').focus();
@@ -272,13 +275,12 @@ export default {
     },
     handleLeave(){
       this.hoverIndex = ''
+    },
+    checkDate() {
+      const now = new Date().getTime()
+      const end = new Date('2022-10-24 23:59:59').getTime()
+      return end < now
     }
   }
-}
-
-function isExpired() {
-  const now = new Date().getTime()
-  const end = new Date('2022-10-24 23:59:59').getTime()
-  return end < now
 }
 </script>

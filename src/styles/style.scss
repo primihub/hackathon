@@ -44,6 +44,7 @@ section{
   // padding-top: 5vh;
   font-size: 14px;
 }
+
 .banner{
   height: 30vh;
   background: url(../assets/images/banner_02.jpg) center no-repeat;
@@ -178,11 +179,12 @@ section{
 
 // 嘉宾
 .experts{
-  width: 40%;
   overflow: hidden;
   position: relative;
   font-size: 16px;
   margin: 10px;
+  max-height: 20vh;
+  background-color: #eceff4;
   &-container{
     display: flex;
     justify-content: center;
@@ -204,12 +206,16 @@ section{
     left: 0;
     right: 0;
     bottom: 0;
-    p{
-      padding: 0 20px;
-    }
+    height: auto;
+    overflow-y: auto;
   }
 }
-
+::-webkit-scrollbar {
+  width: 8px;
+ }
+.experts::-webkit-scrollbar {
+  width: 8px;
+ }
 .partners2{
   // background-color: #f7f8f9;
   color: #ffffff;
@@ -269,6 +275,9 @@ section{
   background-image: linear-gradient(to right, rgb(36, 35, 106) 0%, rgba(36, 35, 106, .6) 100%);
   &.show{
     top: 0!important;
+  }
+  p{
+    padding: 0 5px;
   }
 }
 .footer{
@@ -397,8 +406,9 @@ a.nocolor:visited {
   }
   .experts{
     width: 260px;
-    height: 280px;
-    margin: 40px 20px;
+    height: 260px;
+    max-height: 280px;
+    margin: 40px 10px 20px;
     position: relative;
     &:hover .experts-info{
       top: 0;
@@ -412,12 +422,18 @@ a.nocolor:visited {
       left: 0;
       right: 0;
       bottom: 0;
+      // background-color: #eceff4;
       img{
         max-width: 100%;
       }
+      .experts-info{
+        p{
+          padding: 0 20px;
+        }
+      }
     }
     &-name{
-      font-size: 28px;
+      font-size: 24px;
       background-image: linear-gradient(to right, rgb(36, 35, 106) 0%, rgba(36, 35, 106, 0) 100%);
     }
   }
@@ -465,5 +481,10 @@ a.nocolor:visited {
   }
   .background{
     font-size: 18px;
+  }
+  .experts-info{
+    p{
+      padding: 0 20px;
+    }
   }
 }
