@@ -433,6 +433,25 @@ a.nocolor:visited {
     }
   }
 }
+@media (min-width: 1200px){
+  .experts{
+    width: 15vw;
+    margin: 1vw;
+    height: 240px;
+    &-info{
+      padding: 0 12px;
+    }
+    &-name{
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    &:hover{
+      .experts-info{
+        top: 0;
+      }
+    }
+  }
+}
 @media (min-width: 1600px) {
   .support-con{
     width: 1120px;
