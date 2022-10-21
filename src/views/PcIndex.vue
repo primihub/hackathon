@@ -226,6 +226,10 @@ export default {
         img: require('../assets/images/guest-zhangzhiyong.jpg'),
         desHtml: '教授，博导。河南省特聘教授<br/>现任河南科技大学网络空间安全应用河南省国际联合实验室主任、信息工程学院副院长。'
       }, {
+        name: '周苏岳',
+        img: require('../assets/images/guest-zhousuyue.png'),
+        desHtml: '元宇宙产业生态架构师，影视数字化技术专家<br/>现任马栏山（长沙）视频文创产业园管委会首席专家、长沙马栏山投资开发建设有限公司首席技术官，国家广电总局 5G 高新视频多场景应用重点实验室专家委员，湖南省百人计划人才，长沙市 C 类高层次人才。'
+      }, {
         name: '郭华',
         img: require('../assets/images/guest-guohua.jpeg'),
         desHtml: '北京航空航天大学博导，副教授<br/>研究方向隐私计算，密码学，安全协议。主持国家自然科学基金、北京市自然科学基金、CCF-腾讯犀牛鸟基金课题、CCF-蚂蚁金服隐私保护基金课题等多项。指导学生获全国密码技术竞赛特等奖、一等奖全国大学生信息安全大赛一等奖等多项。'
@@ -233,6 +237,10 @@ export default {
         name: '孙溢',
         img: require('../assets/images/guest-sunyi.jpg'),
         desHtml: '北京邮电大学副教授<br/>主要研究方向包括密码学、安全多方计算、区块链、大数据安全等。主持和参与多项国家863 、国家重点研发计划、国家自然科学基金青年基金、GF科研项目以及多项省部级科技项目和企业横向项目。'
+      }, {
+        name: '李博',
+        img: require('../assets/images/guest-libo.jpeg'),
+        desHtml: '博士，北京航空航天大学计算机学院副研究员<br/>北京市大数据科学与脑机智能高精尖中心高级研究员，爱丁堡大学访问学者，主要从事网络安全、工业互联网、大数据安全等方面的研究工作，已在TKDE、TNNLS、FGCS、《中国科学》等国内外重要期刊及IJCAI、VEE、LISA等高水平会议发表学术论文50余篇。'
       }, {
         name: '茹志强',
         img: require('../assets/images/guest-ruzhiqiang.jpg'),
