@@ -183,15 +183,16 @@ section{
   position: relative;
   font-size: 16px;
   margin: 10px;
-  max-height: 20vh;
   background-color: #eceff4;
+  width: 40vw;
   &-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   &-avatar{
     img{
-      max-width: 100%;
+      width: 100%;
     }
   }
   &-name{
@@ -206,8 +207,9 @@ section{
     left: 0;
     right: 0;
     bottom: 0;
-    height: auto;
+    height: 100%;
     overflow-y: auto;
+    font-size: 12px;
   }
 }
 ::-webkit-scrollbar {
@@ -312,7 +314,7 @@ a.nocolor:visited {
 // Extra small devices (portrait phones, less than 576px)
     // No media query since this is the default in Bootstrap 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
+@media (min-width: 570px) { 
   section{
     padding-top: 80px;
     font-size: 22px;
@@ -380,7 +382,9 @@ a.nocolor:visited {
   .background{
     font-size: 18px;
   }
-
+  .experts{
+    width: 20vw;
+  }
 }
 @media (min-width: 992px) {
   .support-con{
@@ -404,39 +408,6 @@ a.nocolor:visited {
       padding: 0 7vw 0 5vw;
     }
   }
-  .experts{
-    width: 260px;
-    height: 260px;
-    max-height: 280px;
-    margin: 40px 10px 20px;
-    position: relative;
-    &:hover .experts-info{
-      top: 0;
-    } 
-    &-avatar{
-      width: 100%;
-      margin: 0 auto;
-      font-size: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      // background-color: #eceff4;
-      img{
-        max-width: 100%;
-      }
-      .experts-info{
-        p{
-          padding: 0 20px;
-        }
-      }
-    }
-    &-name{
-      font-size: 24px;
-      background-image: linear-gradient(to right, rgb(36, 35, 106) 0%, rgba(36, 35, 106, 0) 100%);
-    }
-  }
   .partners2{
     .img-container{
       padding: 0 50px;
@@ -451,9 +422,28 @@ a.nocolor:visited {
       }
     }
   }
+  .experts{
+    width: 15vw;
+    margin: 1vw;
+    &-info{
+      padding: 0 20px;
+    }
+    &-name{
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    &:hover{
+      .experts-info{
+        top: 0;
+      }
+    }
+  }
+  .experts-container{
+    justify-content: flex-start;
+  }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   .support-con{
     width: 1120px;
     margin: 80px auto;
@@ -482,9 +472,10 @@ a.nocolor:visited {
   .background{
     font-size: 18px;
   }
-  .experts-info{
-    p{
-      padding: 0 20px;
-    }
+}
+
+@media (min-width: 1600px) {
+  .experts{
+    width: 14vw;
   }
 }
