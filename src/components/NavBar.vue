@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <b-navbar type="dark" variant="dark" toggleable="lg" fixed="top" class="navbar-custom sticky sticky-dark" id="main-menu"  style="background-color: #4b2f9a;">
-      <b-navbar-brand to="/">
+      <b-navbar-brand href="/">
           <img src="../assets/images/logo.png" alt="原语科技" class="logo"/>
         </b-navbar-brand>
         <b-navbar-toggle target="navbarCollapse"></b-navbar-toggle>
@@ -47,6 +47,10 @@ export default {
         {
           name: '联系我们',
           path: 'contact'
+        },
+        {
+          name: '合作伙伴',
+          path: 'partners'
         },
       ],
     };

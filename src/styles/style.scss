@@ -44,6 +44,7 @@ section{
   // padding-top: 5vh;
   font-size: 14px;
 }
+
 .banner{
   height: 30vh;
   background: url(../assets/images/banner_02.jpg) center no-repeat;
@@ -178,38 +179,45 @@ section{
 
 // 嘉宾
 .experts{
-  width: 40%;
   overflow: hidden;
   position: relative;
   font-size: 16px;
   margin: 10px;
+  background-color: #19092f;
+  width: 40vw;
   &-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   &-avatar{
     img{
-      max-width: 100%;
+      width: 100%;
     }
   }
   &-name{
     color: #fff;
-    padding: 5px 20px;
-    font-size: 18px;
+    padding: 8px 20px;
+    font-size: 20px;
   }
   
   .experts-info{
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 0;
     right: 0;
     bottom: 0;
-    p{
-      padding: 0 20px;
-    }
+    height: 100%;
+    overflow-y: auto;
+    font-size: 12px;
   }
 }
-
+::-webkit-scrollbar {
+  width: 8px;
+ }
+.experts::-webkit-scrollbar {
+  width: 8px;
+ }
 .partners2{
   // background-color: #f7f8f9;
   color: #ffffff;
@@ -269,6 +277,10 @@ section{
   background-image: linear-gradient(to right, rgb(36, 35, 106) 0%, rgba(36, 35, 106, .6) 100%);
   &.show{
     top: 0!important;
+  }
+  p{
+    padding: 0 5px;
+    margin-bottom: 0;
   }
 }
 .footer{
@@ -351,11 +363,6 @@ a.nocolor:visited {
       margin: 30px 20px;
     }
   }
-  .group-con{
-    img{
-      width: 50%;
-    }
-  }
   .box h3{
     font-size: 30px;
   }
@@ -371,9 +378,8 @@ a.nocolor:visited {
   .background{
     font-size: 18px;
   }
-
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .support-con{
     margin: 80px auto 0;
     dt{
@@ -395,32 +401,6 @@ a.nocolor:visited {
       padding: 0 7vw 0 5vw;
     }
   }
-  .experts{
-    width: 260px;
-    height: 280px;
-    margin: 40px 20px;
-    position: relative;
-    &:hover .experts-info{
-      top: 0;
-    } 
-    &-avatar{
-      width: 100%;
-      margin: 0 auto;
-      font-size: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      img{
-        max-width: 100%;
-      }
-    }
-    &-name{
-      font-size: 28px;
-      background-image: linear-gradient(to right, rgb(36, 35, 106) 0%, rgba(36, 35, 106, 0) 100%);
-    }
-  }
   .partners2{
     .img-container{
       padding: 0 50px;
@@ -435,9 +415,44 @@ a.nocolor:visited {
       }
     }
   }
+  .experts{
+    width: 22vw;
+    margin: 1vw;
+    height: 220px;
+    &-info{
+      padding: 0 12px;
+    }
+    &-name{
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    &:hover{
+      .experts-info{
+        top: 0;
+      }
+    }
+  }
 }
-
-@media (min-width: 1400px) {
+@media (min-width: 1200px){
+  .experts{
+    width: 15vw;
+    margin: 1vw;
+    height: 240px;
+    &-info{
+      padding: 0 12px;
+    }
+    &-name{
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    &:hover{
+      .experts-info{
+        top: 0;
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
   .support-con{
     width: 1120px;
     margin: 80px auto;
@@ -465,5 +480,29 @@ a.nocolor:visited {
   }
   .background{
     font-size: 18px;
+  }
+  .experts{
+    width: 14vw;
+    margin: 1vw;
+    height: 260px;
+    &-info{
+      padding: 0 12px;
+    }
+    &-name{
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    &:hover{
+      .experts-info{
+        top: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .experts{
+    width: 11vw;
+    height: 240px;
   }
 }
