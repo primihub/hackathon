@@ -183,7 +183,7 @@ section{
   position: relative;
   font-size: 16px;
   margin: 10px;
-  background-color: #eceff4;
+  background-color: #19092f;
   width: 40vw;
   &-container{
     display: flex;
@@ -197,13 +197,13 @@ section{
   }
   &-name{
     color: #fff;
-    padding: 5px 20px;
-    font-size: 18px;
+    padding: 8px 20px;
+    font-size: 20px;
   }
   
   .experts-info{
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -280,6 +280,7 @@ section{
   }
   p{
     padding: 0 5px;
+    margin-bottom: 0;
   }
 }
 .footer{
@@ -314,7 +315,7 @@ a.nocolor:visited {
 // Extra small devices (portrait phones, less than 576px)
     // No media query since this is the default in Bootstrap 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 570px) { 
+@media (min-width: 576px) { 
   section{
     padding-top: 80px;
     font-size: 22px;
@@ -362,11 +363,6 @@ a.nocolor:visited {
       margin: 30px 20px;
     }
   }
-  .group-con{
-    img{
-      width: 50%;
-    }
-  }
   .box h3{
     font-size: 30px;
   }
@@ -382,11 +378,8 @@ a.nocolor:visited {
   .background{
     font-size: 18px;
   }
-  .experts{
-    width: 20vw;
-  }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .support-con{
     margin: 80px auto 0;
     dt{
@@ -423,10 +416,11 @@ a.nocolor:visited {
     }
   }
   .experts{
-    width: 15vw;
+    width: 22vw;
     margin: 1vw;
+    height: 220px;
     &-info{
-      padding: 0 20px;
+      padding: 0 12px;
     }
     &-name{
       font-size: 20px;
@@ -439,8 +433,7 @@ a.nocolor:visited {
     }
   }
 }
-
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
   .support-con{
     width: 1120px;
     margin: 80px auto;
@@ -469,10 +462,28 @@ a.nocolor:visited {
   .background{
     font-size: 18px;
   }
-}
-
-@media (min-width: 1600px) {
   .experts{
     width: 14vw;
+    margin: 1vw;
+    height: 260px;
+    &-info{
+      padding: 0 12px;
+    }
+    &-name{
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    &:hover{
+      .experts-info{
+        top: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .experts{
+    width: 11vw;
+    height: 240px;
   }
 }
