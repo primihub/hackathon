@@ -151,7 +151,7 @@
         </p>
       </div>
       <hr>
-      <section class="partners2">
+      <section class="partners2" id="partners">
         <div class="section-title">
             <span class="title">合作伙伴</span>
             <span class="background">Partners</span>
