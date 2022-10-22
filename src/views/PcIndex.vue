@@ -43,11 +43,11 @@
           <dt>3.赛制说明</dt>
           <dd>
             <p class="summary text-left">
-            <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 是基于安全多方计算、联邦学习、同态加密、可信计算等的隐私计算技术，结合区块链等研发的开源隐私计算应用平台。
-              <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 秉承保护数据在应用过程中的隐私安全，实现“数据可用不可见”。 产品平台涵盖了匿踪查询、隐私求交、联合建模、联合统计、算法容器管理、数据资源管理、数据确权与定价、异构平台互联互通等主要应用服务功能。
+              本次比赛，邀请所有参赛团队基于开源的 <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 技术及其服务进行开发，期待通过本场大赛，为隐私计算技术的推进和应用的发展提供新思路。
             </p>
             <p class="summary text-left">
-            本次比赛，邀请所有参赛团队基于 <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 技术及其服务进行开发，期待通过本场大赛，为隐私计算技术的推进和应用的发展提供新思路。
+            <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 是基于安全多方计算、联邦学习、同态加密、可信计算等的隐私计算技术，结合区块链等研发的开源隐私计算应用平台。
+              <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 秉承保护数据在应用过程中的隐私安全，实现“数据可用不可见”。 产品平台涵盖了匿踪查询、隐私求交、联合建模、联合统计、算法容器管理、数据资源管理、数据确权与定价、异构平台互联互通等主要应用服务功能。
             </p>
           </dd>
         </dl>
@@ -127,7 +127,6 @@
             </div>
           </div>
         </div>
-        <p>重量级评委待揭晓<br>……</p>
       </section>
       <section id="contact" class="box text-left">
         <h3>联系我们</h3>
