@@ -43,7 +43,7 @@
           <dt>3.赛制说明</dt>
           <dd>
             <p class="summary text-left">
-              本次比赛，邀请所有参赛团队基于开源的 <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 技术及其服务进行开发，期待通过本场大赛，为隐私计算技术的推进和应用的发展提供新思路。
+              本次比赛，推荐所有参赛团队使用<a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a>开源平台进行开发，但不限制。期待通过本场大赛，为隐私计算技术的推进和应用的发展提供新思路。
             </p>
             <p class="summary text-left">
             <a class="nocolor" href="https://github.com/primihub/primihub" target="_blank">PrimiHub</a> 是基于安全多方计算、联邦学习、同态加密、可信计算等的隐私计算技术，结合区块链等研发的开源隐私计算应用平台。
@@ -131,14 +131,21 @@
       <section id="contact" class="box text-left">
         <h3>联系我们</h3>
         <b-row class="mb-5 align-item-center">
-          <b-col cols="24"  class="qrcode">
-            <p>合作联系人：大赛小助手<br>
-              邮箱：<a href="mailto:shackathon@openmpc.com" target="_blank">hackathon@openmpc.com</a>
+          <b-col cols="6" sm="6"  class="qrcode">
+            <p>合作联系人：郑超 <br>
+              电话：15968846980 <br>
+              邮箱：<a href="zhengchao@openmpc.com" target="_blank">zhengchao@openmpc.com</a>
             </p>
-            <img src="../assets/images/qrcode-contact.png" alt="大赛小助手" width="198">
+            <img src="../assets/images/zhengchao.png" alt="郑超">
+          </b-col>
+          <b-col cols="6" sm="6" class="qrcode" >
+            <p>合作联系人：熊婷<br>
+              电话：15057101054<br>
+              邮箱：<a href="xiongting@openmpc.com" target="_blank">xiongting@openmpc.com</a>
+            </p>
+            <img src="../assets/images/xiongting.png" alt="熊婷">
           </b-col>
         </b-row>
-        
       </section>
       <div class="box text-left">
         <h3>权责说明</h3> 
@@ -211,7 +218,7 @@ export default {
       experts:[{
         name: '胡春明',
         img: require('../assets/images/guest-huchunming.jpg'),
-        desHtml: '教授，博士，博士生导师<br/>软件学院院长。大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
+        desHtml: '教授，博士，博士生导师<br/>北航软件学院院长。大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
       }, {
         name: '丁勇',
         img: require('../assets/images/guest-dingyong.jpg'),
