@@ -305,7 +305,7 @@ export default {
     },
     checkDate() {
       const now = new Date().getTime()
-      const end = new Date('2022-10-24 23:59:59').getTime()
+      const end = new Date('2022-10-24 00:00:00').getTime()
       return end < now
     }
   }
