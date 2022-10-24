@@ -275,6 +275,10 @@ export default {
         name: '强锋',
         img: require('../assets/images/qiangfeng2.jpg'),
         desHtml: '微言科技 CTO<br/>曾任中国工商银行大数据与人工智能实验室资深数据科学家和联邦学习团队负责人'
+      },{
+        name: '胡春强',
+        img: require('../assets/images/guest-huchuqiang.jpg'),
+        desHtml: '重庆大学“百人计划”研究员、博导，<br/>大数据与软件学院 数据科学系副系主任，教育部CPS重点实验室智能软件与服务计算研究所副所长'
       }],
       isExpired: false
     };
