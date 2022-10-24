@@ -9,7 +9,8 @@
         <b-collapse id="navbarCollapse" is-nav>
           <b-navbar-nav id="navbar-navlist">
             <b-nav-item-dropdown text="新闻中心" class="dropdown">
-              <b-dropdown-item href="https://live.csdn.net/list/zxff716" target="_blank">CSDN</b-dropdown-item>
+              <b-dropdown-item href="https://marketing.csdn.net/p/340ef4f88ad727b29b2289a84469f182" target="_blank">CSDN</b-dropdown-item>
+              <b-dropdown-item href="https://www.openmpc.com/" target="_blank">OpenMPC</b-dropdown-item>
               <b-dropdown-item href="https://space.bilibili.com/500096368" target="_blank">Meetup</b-dropdown-item>
             </b-nav-item-dropdown>
             <b-nav-item :class="{active: activeIndex === index}" :href="`#${item.path}`" v-for="(item,index) in list" :key="index" :id="'navbar-links-'+ index" @click="handleClick(item.path,index)">{{item.name}}</b-nav-item>
