@@ -71,7 +71,7 @@
         <dl>
           <dt>6.奖项设置</dt>
           <dd>
-            择优评出一等奖 2 组*3万，二等奖 4 组*2万，三等奖 6 组*1万，优胜奖-礼品证书。
+            择优评出一等奖 1 组*3万，二等奖 2 组*2万，三等奖 3 组*1万，优胜奖-礼品证书。
           </dd>
         </dl>
       </div>
@@ -132,16 +132,16 @@
         <h3>联系我们</h3>
         <b-row class="mb-5 align-item-center">
           <b-col cols="6" sm="6"  class="qrcode">
-            <p>合作联系人：大赛小助手 <br>
+            <p>大赛联系人：大赛小助手 <br>
               邮箱：<a target="blank" href="mailto:hackathon@openmpc.com">hackathon@openmpc.com</a>
             </p>
             <img src="../assets/images/hackathon.jpg" alt="郑超">
           </b-col>
           <b-col cols="6" sm="6" class="qrcode" >
-            <p>合作联系人：熊婷<br>
-              邮箱：<a target="blank" href="mailto:xiongting@openmpc.com">xiongting@openmpc.com</a>
+            <p>大赛联系人：可隐<br>
+              邮箱：<a target="blank" href="mailto:ppc@openmpc.com">ppc@openmpc.com</a>
             </p>
-            <img src="../assets/images/xiongting.png" alt="熊婷">
+            <img src="../assets/images/xiongting.png" alt="可隐">
           </b-col>
         </b-row>
       </section>
@@ -216,7 +216,7 @@ export default {
       experts:[{
         name: '胡春明',
         img: require('../assets/images/guest-huchunming.jpg'),
-        desHtml: '北航软件学院院长，教授，博导。<br/>大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
+        desHtml: '北京航空航天大学软件学院院长，教授，博导。<br/>大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
       }, {
         name: '丁勇',
         img: require('../assets/images/guest-dingyong.jpg'),
@@ -231,7 +231,7 @@ export default {
         desHtml: '河南科技大学信息工程学院副院长，河南省特聘教授，博导<br/>现任河南科技大学网络空间安全应用河南省国际联合实验室主任、信息工程学院副院长。'
       }, {
         name: '周苏岳',
-        img: require('../assets/images/guest-zhousuyue.png'),
+        img: require('../assets/images/guest-zhousuyue.jpg'),
         desHtml: '元宇宙产业生态架构师，影视数字化技术专家<br/>现任马栏山（长沙）视频文创产业园管委会首席专家、长沙马栏山投资开发建设有限公司首席技术官，国家广电总局 5G 高新视频多场景应用重点实验室专家委员，湖南省百人计划人才，长沙市 C 类高层次人才。'
       }, {
         name: '郭华',
@@ -264,7 +264,7 @@ export default {
       }, {
         name: '李森',
         img: require('../assets/images/guest-liseng.jpg'),
-        desHtml: '北航投资常务副总，星空投资管理合伙人<br/>围绕未来空天技术，医工交叉，下一代信息技术，新材料，新能源领域开展早期投资。投资案例:星河动力、e签宝、四象爱数、航宇智造、深光科技、吸力奇迹、全景声科技、未磁科技、微盟等项目。曾获中国技术创业协会“科技创业导师贡献奖”获得者，深圳市“鹏城新力”百花奖章。'
+        desHtml: '北京航空航天大学投资常务副总，星空投资管理合伙人<br/>围绕未来空天技术，医工交叉，下一代信息技术，新材料，新能源领域开展早期投资。投资案例:星河动力、e签宝、四象爱数、航宇智造、深光科技、吸力奇迹、全景声科技、未磁科技、微盟等项目。曾获中国技术创业协会“科技创业导师贡献奖”获得者，深圳市“鹏城新力”百花奖章。'
       }, {
         name: '范晶晶',
         img: require('../assets/images/fanjingjing2.jpg'),
@@ -283,6 +283,7 @@ export default {
   },
   created(){
     this.isExpired = this.checkDate()
+    console.log(this.isExpired);
   },
   methods:{
     signup() {
@@ -307,7 +308,7 @@ export default {
     },
     checkDate() {
       const now = new Date().getTime()
-      const end = new Date('2022-10-24 00:00:00').getTime()
+      const end = new Date('2022/10/24 00:00:00').getTime()
       return end < now
     }
   }
