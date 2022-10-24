@@ -133,14 +133,12 @@
         <b-row class="mb-5 align-item-center">
           <b-col cols="6" sm="6"  class="qrcode">
             <p>合作联系人：大赛小助手 <br>
-              电话：15968846980 <br>
               邮箱：<a target="blank" href="mailto:hackathon@openmpc.com">hackathon@openmpc.com</a>
             </p>
             <img src="../assets/images/hackathon.jpg" alt="郑超">
           </b-col>
           <b-col cols="6" sm="6" class="qrcode" >
             <p>合作联系人：熊婷<br>
-              电话：15057101054<br>
               邮箱：<a target="blank" href="mailto:xiongting@openmpc.com">xiongting@openmpc.com</a>
             </p>
             <img src="../assets/images/xiongting.png" alt="熊婷">
