@@ -117,8 +117,8 @@
           <span class="background">Evaluation Experts</span>
         </div>
         <div class="experts-container">
-          <div class="experts" v-for="(item,index) in experts" :key="index">
-            <div class="experts-avatar" @mousemove="handleHover(index)" @mouseout="handleLeave">
+          <div class="experts" v-for="(item,index) in experts" :key="index" @mousemove="handleHover(index)" @mouseout="handleLeave">
+            <div class="experts-avatar">
               <img :src="item.img" :alt="item.name">
             </div>
             <div class="experts-info text-left" :class="{'show': index === hoverIndex}">
@@ -133,14 +133,12 @@
         <b-row class="mb-5 align-item-center">
           <b-col cols="6" sm="6"  class="qrcode">
             <p>合作联系人：大赛小助手 <br>
-              电话：15968846980 <br>
               邮箱：<a target="blank" href="mailto:hackathon@openmpc.com">hackathon@openmpc.com</a>
             </p>
-            <img src="../assets/images/zhengchao.png" alt="郑超">
+            <img src="../assets/images/hackathon.jpg" alt="郑超">
           </b-col>
           <b-col cols="6" sm="6" class="qrcode" >
             <p>合作联系人：熊婷<br>
-              电话：15057101054<br>
               邮箱：<a target="blank" href="mailto:xiongting@openmpc.com">xiongting@openmpc.com</a>
             </p>
             <img src="../assets/images/xiongting.png" alt="熊婷">

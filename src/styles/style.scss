@@ -151,7 +151,7 @@ section{
 .box{
   color: #ffffff;
   width: 96%;
-  margin: 0 auto;
+  margin: 20px auto 0;
   h3{
     position: relative;
     padding-bottom: 10px;
@@ -185,6 +185,7 @@ section{
   margin: 10px;
   background-color: #19092f;
   width: 40vw;
+  height: 24vh;
   &-container{
     display: flex;
     flex-wrap: wrap;
@@ -198,7 +199,8 @@ section{
   &-name{
     color: #fff;
     padding: 8px 20px;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
   }
   
   .experts-info{
@@ -416,7 +418,7 @@ a.nocolor:visited {
     }
   }
   .experts{
-    width: 22vw;
+    width: 20vw;
     margin: 1vw;
     height: 220px;
     &-info{
@@ -439,7 +441,8 @@ a.nocolor:visited {
     margin: 1vw;
     height: 240px;
     &-info{
-      padding: 0 0px;
+      padding: 0 8px;
+      font-size: 14px!important;
     }
     &-name{
       font-size: 20px;
