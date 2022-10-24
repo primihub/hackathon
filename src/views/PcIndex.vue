@@ -116,6 +116,7 @@
           <span class="title">评审专家</span>
           <span class="background">Evaluation Experts</span>
         </div>
+        <p style="font-size: 18px; margin-top: 10px"> - 排名不分先后 -</p>
         <div class="experts-container">
           <div class="experts" v-for="(item,index) in experts" :key="index" @mousemove="handleHover(index)" @mouseout="handleLeave">
             <div class="experts-avatar">
@@ -216,7 +217,7 @@ export default {
       experts:[{
         name: '胡春明',
         img: require('../assets/images/guest-huchunming.jpg'),
-        desHtml: '北京航空航天大学软件学院院长，教授，博导。<br/>大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
+        desHtml: '北京航空航天大学软件学院院长，教授，博导<br/>大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
       }, {
         name: '丁勇',
         img: require('../assets/images/guest-dingyong.jpg'),
@@ -244,7 +245,7 @@ export default {
       }, {
         name: '李博',
         img: require('../assets/images/guest-libo.jpeg'),
-        desHtml: '博士，北京航空航天大学计算机学院副研究员<br/>北京市大数据科学与脑机智能高精尖中心高级研究员，爱丁堡大学访问学者，主要从事网络安全、工业互联网、大数据安全等方面的研究工作，已在TKDE、TNNLS、FGCS、《中国科学》等国内外重要期刊及IJCAI、VEE、LISA等高水平会议发表学术论文50余篇。'
+        desHtml: '北京航空航天大学计算机学院副研究员，博士<br/>北京市大数据科学与脑机智能高精尖中心高级研究员，爱丁堡大学访问学者，主要从事网络安全、工业互联网、大数据安全等方面的研究工作，已在TKDE、TNNLS、FGCS、《中国科学》等国内外重要期刊及IJCAI、VEE、LISA等高水平会议发表学术论文50余篇。'
       }, {
         name: '茹志强',
         img: require('../assets/images/guest-ruzhiqiang.jpg'),
@@ -252,7 +253,7 @@ export default {
       }, {
         name: '李萌',
         img: require('../assets/images/guest-limeng.jpeg'),
-        desHtml: '博士，副研究员，硕士生导师<br/>指导全国大学生信息安全竞赛作品赛并获国家二等奖3项、国家三等奖2项和省级二等奖1项；担任中国中文信息学会大数据安全与隐私保护专委会常务委员、CCF区块链专委会执委、CCF计算机应用专委会执委、CAAI智能信息网络专业委员会委员、CAAI青年工作委员会委员、中国计算机学会会员、中国密码学会会员、IEEE高级会员和多个学术期刊与会议的审稿人。'
+        desHtml: '合肥工业大学计算机与信息学院副研究员，博士，硕士生导师<br/>指导全国大学生信息安全竞赛作品赛并获国家二等奖3项、国家三等奖2项和省级二等奖1项；担任中国中文信息学会大数据安全与隐私保护专委会常务委员、CCF区块链专委会执委、CCF计算机应用专委会执委、CAAI智能信息网络专业委员会委员、CAAI青年工作委员会委员、中国计算机学会会员、中国密码学会会员、IEEE高级会员和多个学术期刊与会议的审稿人。'
       }, {
         name: '李增鹏',
         img: require('../assets/images/guest-lizengpeng.jpeg'),
@@ -276,7 +277,7 @@ export default {
       },{
         name: '胡春强',
         img: require('../assets/images/guest-huchuqiang.jpg'),
-        desHtml: '重庆大学“百人计划”研究员、博导，<br/>大数据与软件学院 数据科学系副系主任，教育部CPS重点实验室智能软件与服务计算研究所副所长'
+        desHtml: '重庆大学“百人计划”研究员、博导<br/>大数据与软件学院 数据科学系副系主任，教育部CPS重点实验室智能软件与服务计算研究所副所长'
       }],
       isExpired: false
     };
