@@ -132,16 +132,16 @@
         <h3>联系我们</h3>
         <b-row class="mb-5 align-item-center">
           <b-col cols="6" sm="6"  class="qrcode">
-            <p>合作联系人：郑超 <br>
+            <p>合作联系人：大赛小助手 <br>
               电话：15968846980 <br>
-              邮箱：<a href="zhengchao@openmpc.com" target="_blank">zhengchao@openmpc.com</a>
+              邮箱：<a target="blank" href="mailto:hackathon@openmpc.com">hackathon@openmpc.com</a>
             </p>
             <img src="../assets/images/zhengchao.png" alt="郑超">
           </b-col>
           <b-col cols="6" sm="6" class="qrcode" >
             <p>合作联系人：熊婷<br>
               电话：15057101054<br>
-              邮箱：<a href="xiongting@openmpc.com" target="_blank">xiongting@openmpc.com</a>
+              邮箱：<a target="blank" href="mailto:xiongting@openmpc.com">xiongting@openmpc.com</a>
             </p>
             <img src="../assets/images/xiongting.png" alt="熊婷">
           </b-col>
@@ -218,19 +218,19 @@ export default {
       experts:[{
         name: '胡春明',
         img: require('../assets/images/guest-huchunming.jpg'),
-        desHtml: '教授，博士，博士生导师<br/>北航软件学院院长。大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
+        desHtml: '北航软件学院院长，教授，博导。<br/>大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
       }, {
         name: '丁勇',
         img: require('../assets/images/guest-dingyong.jpg'),
-        desHtml: '桂林电子计算机与信息安全副院长，教授，博导<br/>广西密码学与信息安全重点实验室主任、福建“闽江学者讲座教授”，教育部网络空间安全教指委委员、中国密码学会高级会员，中国计算机学会区块链专委会常务委员。'
+        desHtml: '教授，博导，广西密码学与信息安全重点实验室主任<br/>福建“闽江学者讲座教授”，教育部网络空间安全教指委委员、中国密码学会高级会员，中国计算机学会区块链专委会常务委员。'
       }, {
         name: '袁征',
         img: require('../assets/images/guest-yuanzheng.png'),
-        desHtml: '北京科学技术大学兼职博导<br/>清华大学（杨振宁）高等研究院数学博士后•。国务院政府特殊津贴获得者，长江学者奖励计划”，中组部“青年拨尖人才”•发表论文50余篇，先后主持省部级以上项目20多项，其中国家级科研项目6项。'
+        desHtml: '北京电子科技学院教授<br/>中国科技大学和北京邮电大学网空安全专业兼职博导，北京邮电大学理学院密码学博士，清华大学（杨振宁）高等研究院数学博士后，美国clemson大学访问学者。国务院政府特殊津贴获得者。长江学者奖励计划”、中组部“青年拨尖人才” 、“国家自然科学基金”等项目的通信评审专家。研究方向：经典密码的设计、安全性分析及其应用。'
       }, {
         name: '张志勇',
         img: require('../assets/images/guest-zhangzhiyong.jpg'),
-        desHtml: '教授，博导。河南省特聘教授<br/>现任河南科技大学网络空间安全应用河南省国际联合实验室主任、信息工程学院副院长。'
+        desHtml: '河南科技大学信息工程学院副院长，河南省特聘教授，博导<br/>现任河南科技大学网络空间安全应用河南省国际联合实验室主任、信息工程学院副院长。'
       }, {
         name: '周苏岳',
         img: require('../assets/images/guest-zhousuyue.png'),
@@ -250,7 +250,7 @@ export default {
       }, {
         name: '茹志强',
         img: require('../assets/images/guest-ruzhiqiang.jpg'),
-        desHtml: '中国计算机学会 CCF 第十二届全国代表大会全国代表<br/>CDA 首批技术合伙人，中国人工智能学会 CAAI 评审库专家，信用中国行业信用专家，中国信息通信研究院隐私计算联盟电信工作组联席组长。<br/>曾在阿里巴巴集团、大连万达集团、招商局集团控股子公司等多家单位任职，目前任中国移动通信集团信息技术中心（大数据中心）内设部门技术总监。'
+        desHtml: '中国移动信息技术中心部门技术总监<br/>中国计算机学会 CCF 第十二届全国代表大会全国代表；他是 CDA首批技术合伙人；他是中国人工智能学会CAAI评审库专家 ；他是信用中国行业信用专家；他是中国信息通信研究院隐私计算联盟电信工作组联席组长。曾在阿里巴巴集团、大连万达集团、招商局集团控股子公司等多家单位任职，目前任中国移动通信集团信息技术中心（大数据中心）内设部门技术总监。'
       }, {
         name: '李萌',
         img: require('../assets/images/guest-limeng.jpeg'),
