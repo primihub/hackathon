@@ -222,7 +222,7 @@ export default {
       }, {
         name: '丁勇',
         img: require('../assets/images/guest-dingyong.jpg'),
-        desHtml: '教授，博导，广西密码学与信息安全重点实验室主任<br/>福建“闽江学者讲座教授”，教育部网络空间安全教指委委员、中国密码学会高级会员，中国计算机学会区块链专委会常务委员。'
+        desHtml: '教授，博导，广西密码学与信息安全重点实验室主任、<br/>福建“闽江学者讲座教授”，教育部网络空间安全教指委委员、中国密码学会高级会员，中国计算机学会区块链专委会常务委员。'
       }, {
         name: '袁征',
         img: require('../assets/images/guest-yuanzheng.png'),
