@@ -3,7 +3,7 @@
     <NavBar />
     <div class="banner">
       <div class="container">
-        <div class="button" @click="showTips"></div>
+        <div class="button" @click="signup"></div>
       </div>
     </div>
     <div class="container">
@@ -208,33 +208,58 @@ export default {
     return {
       showTip: false,
       hoverIndex: -1,
-      experts:[
-        {
-          name: '范晶晶',
-          img: require('../assets/images/fanjingjing2.png'),
-          desHtml: '科鲸CEO<br>开源组织Datawhale发起人<br>开源社成员'
-        },
-        {
-          name: '强锋',
-          img: require('../assets/images/qiangfeng2.png'),
-          desHtml: '微言科技CTO<br>曾任中国工商银行大数据与人工智能实验室资深数据科学家和联邦学习团队负责人'
-        }
-      ]
+      experts:[{
+        name: '胡春明',
+        img: require('../assets/images/guest-huchunming.png'),
+        desHtml: '教授，博士，博士生导师。软件学院院长。<br/>大数据科学与脑机智能北京市高精尖创新中心副主任。中国计算机学会系统软件专委会常务委员，计算机科学普及工委主任，中国电子学会云计算、大数据专家委员会副秘书长，国际万维网联盟（W3C）副理事长。'
+      }, {
+        name: '丁勇',
+        img: require('../assets/images/guest-dingyong.jpeg'),
+        desHtml: '教授，博导。<br/>广西密码学与信息安全重点实验室主任、福建“闽江学者讲座教授”，教育部网络空间安全教指委委员、中国密码学会高级会员，中国计算机学会区块链专委会常务委员。'
+      }, {
+        name: '孙溢',
+        img: require('../assets/images/guest-sunyi.jpeg'),
+        desHtml: '北京邮电大学副教授。<br/>主要研究方向包括密码学、安全多方计算、区块链、大数据安全等。主持和参与多项国家863 、国家重点研发计划、国家自然科学基金青年基金、GF科研项目以及多项省部级科技项目和企业横向项目。'
+      }, {
+        name: '张志勇',
+        img: require('../assets/images/guest-zhangzhiyong.jpeg'),
+        desHtml: '教授，博导。河南省特聘教授。<br/>现任河南科技大学网络空间安全应用河南省国际联合实验室主任、信息工程学院副院长。'
+      }, {
+        name: '茹志强',
+        img: require('../assets/images/guest-ruzhiqiang.jpeg'),
+        desHtml: '中国计算机学会 CCF 第十二届全国代表大会全国代表。<br/>CDA 首批技术合伙人，中国人工智能学会 CAAI 评审库专家，信用中国行业信用专家，中国信息通信研究院隐私计算联盟电信工作组联席组长。<br/>曾在阿里巴巴集团、大连万达集团、招商局集团控股子公司等多家单位任职，目前任中国移动通信集团信息技术中心（大数据中心）内设部门技术总监。'
+      }, {
+        name: '赵晨',
+        img: require('../assets/images/guest-zhaocheng.jpeg'),
+        desHtml: '璞跃中国管理合伙人。<br/>他在中国带领专业团队致力于投资、加速本地科技创业项目成长，同时帮助海外顶尖科技创新企业进入中国并拓展国内市场。'
+      }, {
+        name: '李森',
+        img: require('../assets/images/guest-liseng.jpeg'),
+        desHtml: '北航投资常务副总，星空投资管理合伙人。<br/>围绕未来空天技术，医工交叉，下一代信息技术，新材料，新能源领域开展早期投资。投资案例:星河动力、e签宝、四象爱数、航宇智造、深光科技、吸力奇迹、全景声科技、未磁科技、微盟等项目。曾获中国技术创业协会“科技创业导师贡献奖”获得者，深圳市“鹏城新力”百花奖章。'
+      }, {
+        name: '范晶晶',
+        img: require('../assets/images/fanjingjing2.png'),
+        desHtml: '科鲸 CEO<br/>开源组织 Datawhale 发起人<br/>开源社成员'
+      }, {
+        name: '强锋',
+        img: require('../assets/images/qiangfeng2.png'),
+        desHtml: '微言科技 CTO<br/>曾任中国工商银行大数据与人工智能实验室资深数据科学家和联邦学习团队负责人'
+      }]
     };
   },
   computed:{
     expired(){
-      const now = new Date().getTime()
-      const end = new Date('2022-10-24 23:59:59').getTime()
-      console.log((end - now) / 86400000+'天');
-      if(end-now < 0){
-        return true
-      }else{
-        return false
-      }
+      return isExpired()
     }
   },
   methods:{
+    signup() {
+      if(!isExpired()){
+        this.showTips()
+      } else {
+        window.open('https://m74hgjmt55.feishu.cn/share/base/form/shrcnsCkHGoP6Sz4pCNSxf2XL9b', '_blank').focus();
+      }
+    },
     showTips(){
       this.showTip = true
       setTimeout(() => {
@@ -249,5 +274,11 @@ export default {
       this.hoverIndex = ''
     }
   }
+}
+
+function isExpired() {
+  const now = new Date().getTime()
+  const end = new Date('2022-10-24 23:59:59').getTime()
+  return end < now
 }
 </script>
