@@ -291,7 +291,7 @@ export default {
       if(!this.isExpired){
         this.showTips()
       } else {
-        window.open('https://m74hgjmt55.feishu.cn/share/base/form/shrcnsCkHGoP6Sz4pCNSxf2XL9b', '_blank').focus();
+        window.open('https://wenjuan.feishu.cn/m/cfm?t=sQi5inqsabHi-sf6b', '_blank').focus();
       }
     },
     showTips(){
