@@ -35,7 +35,7 @@
           <dd>
             <ul>
               <li>大赛面向社会各界开放，不限年龄、国籍，高校、科研院所、企业从业人员均可报名参赛。</li>
-              <li>报名条件：参赛人员以个人或者团队形式报名参赛，一名参赛人员在一个赛道中仅允许出现1次，但可以参加多个赛道。可以组团参加，每支参赛团队人数不超过5人。</li>
+              <li>报名条件：参赛人员以个人或者团队形式报名参赛，一名参赛人员仅能在一个团队中，每支参赛团队人数不超过5人。</li>
             </ul>
           </dd>
         </dl>
@@ -85,13 +85,13 @@
         <dl>
           <dt>1.参赛材料</dt>
           <dd>
-            <p>提交源码+路演PPT+5分钟以内演示视频。</p>
+            <p>初赛只提交方案设计，复赛需提交源码+路演PPT+5分钟以内演示视频。</p>
           </dd>
         </dl>
         <dl>
-          <dt>2.提交方式</dt>
+          <dt>2.提交方式</dt
           <dd>
-            参赛团队按报名审核提交材料清单，按要求准备材料后压缩成 zip 文档进行提交，提交网址为：（陆续开放）
+            参赛团队按报名审核提交材料清单，按要求准备材料后压缩成 zip 包，发送到 hackathon@openmpc.com 这个邮箱，或者 <a class="blue" href="https://wenjuan.feishu.cn/m?t=scgs7wVnXVIi-jrwv" target="_blank">点击这里</a> 进行提交。
           </dd>
         </dl>
         <dl>
@@ -194,7 +194,7 @@
       </section>
     </b-container>
     <div class="text-center footer">
-      <p>OpenMPC 版权所有 <a href="https://beian.miit.gov.cn/#/Integrated/index">冀ICP备16008495号-2</a></p>
+      <p>OpenMPC 版权所有 <a href="https://beian.miit.gov.cn/#/Integrated/index">京ICP备2023001113-1号</a></p>
     </div>
   <ToolTip text="报名即将开始" v-if="showTip" :visible="showTip"/>
   </div>
