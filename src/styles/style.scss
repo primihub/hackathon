@@ -110,6 +110,20 @@ section{
   }
   dd{
     margin: 2vh;
+    .dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #1bf6f9;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    a{
+      color: #1bf6f9;
+      text-decoration: none;
+    }
   }
 }
 .support-con{
