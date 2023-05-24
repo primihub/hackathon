@@ -1,9 +1,0 @@
-[submodule "TARGET_FOLDER"]
-	path = TARGET_FOLDER
-	url = https://github.com/HarryR/ethsnarks.git
-[submodule "ethsnarks"]
-	path = ethsnarks
-	url = https://github.com/HarryR/ethsnarks.git
-[submodule "grpc"]
-	path = grpc
-	url = https://github.com/grpc/grpc.git
