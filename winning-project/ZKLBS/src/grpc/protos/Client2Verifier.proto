@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.zklbs.Client2Verifier";
+option java_outer_classname = "Client2Verifier";
+option objc_class_prefix = "CS";
+
+package Client2Verifier;
+
+// The greeting service definition.
+service CVGreeter {
+  // Sends a greeting
+  rpc CVCommunication (CVRequest) returns (CVReply) {}
+}
+
+// The request message containing the user's name.
+message CVRequest {
+  string vk = 1;
+  string proof = 2;
+  string randVk = 3;
+  string randProof = 4;
+}
+
+// The response message containing the greetings
+message CVReply {
+  string answer = 1;
+}

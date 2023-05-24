@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/QSS">
+        <file>myQss.qss</file>
+    </qresource>
+    <qresource prefix="/images"/>
+</RCC>
