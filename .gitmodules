@@ -1,0 +1,6 @@
+[submodule "winning-project/ZKLBS/ethsnarks"]
+	path = winning-project/ZKLBS/ethsnarks
+	url = https://github.com/HarryR/ethsnarks.git
+[submodule "winning-project/ZKLBS/grpc"]
+	path = winning-project/ZKLBS/grpc
+	url = https://github.com/grpc/grpc.git

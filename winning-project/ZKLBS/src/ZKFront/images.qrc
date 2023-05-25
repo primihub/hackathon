@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/Image">
+        <file>blackMap.png</file>
+        <file>coordinateSign.png</file>
+        <file>coordinateSign2.png</file>
+        <file>coordinateSign3.png</file>
+        <file>digitalMap.jpg</file>
+        <file>token.png</file>
+    </qresource>
+</RCC>
