@@ -14,7 +14,7 @@
 | OChicken         | 三等奖 | 亚琛工业大学              | (Leveled) Homomorphic Encrypted Model Predictive Control |
 | wlss             | 三等奖 | 北京航空航天大学          | [transformer隐私保护推理](PPT/README.md)                                  |
 | 隐私计算扛把子   | 三等奖 | 京东                      | 大规模数据高性能分布式PSI                                |
-| 北邮芯片安全小组 | 优胜奖 | 北京邮电大学              | [处理器指令集架构安全中的隐藏指令检测技术] (InstructionTest/README.md)                |
+| 北邮芯片安全小组 | 优胜奖 | 北京邮电大学              | [处理器指令集架构安全中的隐藏指令检测技术](InstructionTest/README.md)                |
 | 0day             | 优胜奖 | 兰州理工大学              | 基于区块链的隐私保护自主身份管理                         |
 | TagDog           | 优胜奖 | 清华大学&西安电子科技大学 | 基于区块链的隐私数据共享和检索方案                       |
 | 你说的都对       | 优胜奖 | 桂林电子科技大学          | 基于联邦学习的电子病历共享系统                           |
