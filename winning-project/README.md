@@ -11,7 +11,7 @@
 | MPCers           | 一等奖 | 中国科学院信息工程研究所  | [高效的安全多方计算数理统计算子库](MeteorLib/README.md)                         |
 | SIF              | 二等奖 | 北京邮电大学              | [ZK-LBS：基于零知识的位置证明](ZKLBS/README.md)                             |
 | ABY              | 二等奖 | 山东大学                  | 隐私保护距离计算与近邻检测协议及应用                     |
-| OChicken         | 三等奖 | 亚琛工业大学              | [(Leveled) Homomorphic Encrypted Model Predictive Control](HECTR/README.md) |
+| OChicken         | 三等奖 | 亚琛工业大学              | [(Leveled) Homomorphic Encrypted Model Predictive Control](https://github.com/OChicken/HECTR/blob/main/README.md) |
 | wlss             | 三等奖 | 北京航空航天大学          | [transformer隐私保护推理](PPT/README.md)                                  |
 | 隐私计算扛把子   | 三等奖 | 京东                      | [大规模数据高性能分布式PSI](ray_psi/README.md)                                |
 | 北邮芯片安全小组 | 优胜奖 | 北京邮电大学              | [处理器指令集架构安全中的隐藏指令检测技术](InstructionTest/README.md)                |
