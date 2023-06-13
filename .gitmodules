@@ -4,3 +4,6 @@
 [submodule "winning-project/ZKLBS/grpc"]
 	path = winning-project/ZKLBS/grpc
 	url = https://github.com/grpc/grpc.git
+[submodule "winning-project/HECTR"]
+	path = winning-project/HECTR
+	url = https://github.com/OChicken/HECTR.git
