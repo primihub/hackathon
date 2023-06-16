@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/testserver.dir/test/test_server.cc.o  -o testserver  /usr/local/lib/libseal-4.1.a -pthread 
