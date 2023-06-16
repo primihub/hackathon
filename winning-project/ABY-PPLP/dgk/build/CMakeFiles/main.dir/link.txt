@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -static CMakeFiles/main.dir/main.cc.o  -o main  libdgklib.a /usr/local/lib/libgmp.a /usr/lib/x86_64-linux-gnu/libm.a 
