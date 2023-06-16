@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdgklib.a  CMakeFiles/dgklib.dir/dgklib/dgk_keygen.cc.o CMakeFiles/dgklib.dir/dgklib/dgk.cc.o CMakeFiles/dgklib.dir/dgklib/gdsa.cc.o CMakeFiles/dgklib.dir/dgklib/maurer.cc.o CMakeFiles/dgklib.dir/dgklib/random.cc.o
+/usr/bin/ranlib libdgklib.a

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/non-interactive-demo.dir/demo.cc.o  -o non-interactive-demo  /usr/local/lib/libseal-4.1.a -pthread 

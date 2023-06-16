@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/build",
+  "command": "/usr/bin/g++   -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/include  -g   -O3 -Wall -c -fPIC -o CMakeFiles/main.dir/main.cc.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/main.cc",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/main.cc"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/build",
+  "command": "/usr/bin/g++   -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/include  -g   -O3 -Wall -c -fPIC -o CMakeFiles/dgklib.dir/dgklib/dgk_keygen.cc.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/dgk_keygen.cc",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/dgk_keygen.cc"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/build",
+  "command": "/usr/bin/g++   -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/include  -g   -O3 -Wall -c -fPIC -o CMakeFiles/dgklib.dir/dgklib/dgk.cc.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/dgk.cc",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/dgk.cc"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/build",
+  "command": "/usr/bin/g++   -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/include  -g   -O3 -Wall -c -fPIC -o CMakeFiles/dgklib.dir/dgklib/gdsa.cc.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/gdsa.cc",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/gdsa.cc"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/build",
+  "command": "/usr/bin/g++   -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/include  -g   -O3 -Wall -c -fPIC -o CMakeFiles/dgklib.dir/dgklib/maurer.cc.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/maurer.cc",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/maurer.cc"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/build",
+  "command": "/usr/bin/g++   -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/include  -g   -O3 -Wall -c -fPIC -o CMakeFiles/dgklib.dir/dgklib/random.cc.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/random.cc",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/dgk/dgklib/random.cc"
+}
+]
