@@ -1,0 +1,20 @@
+theme: jekyll-theme-cayman
+credentials:
+  usernames:
+    jupiter:
+      email: jupiter@gmail.com
+      name: Jupiter Shop
+      password: $2b$12$Ke3QWLoyKqwQq/x87SqHe.h1tCaLjbINisCPmx8nqlD6SP3ix6xUS # To be replaced with hashed password
+    gpg:
+      email: rbriggs@gmail.com
+      name: Rebecca Briggs
+      password: $2b$12$Ke3QWLoyKqwQq/x87SqHe.h1tCaLjbINisCPmx8nqlD6SP3ix6xUS # To be replaced with hashed password
+cookie:
+  expiry_days: 0
+  key: some_signature_key # Must be string
+  name: some_cookie_name
+preauthorized:
+  emails:
+  - jupiter@gmail.com
+
+  
