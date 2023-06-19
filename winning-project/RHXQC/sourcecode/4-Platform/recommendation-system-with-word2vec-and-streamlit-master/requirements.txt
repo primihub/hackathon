@@ -1,0 +1,13 @@
+streamlit
+pytest-shutil
+pandas
+numpy
+tqdm
+sklearn
+Google-Images-Search
+matplotlib
+google_images_download
+pillow
+python-resize-image
+joblib
+gensim

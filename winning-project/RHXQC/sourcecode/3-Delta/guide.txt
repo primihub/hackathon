@@ -1,0 +1,9 @@
+代码使用说明（代码部分包含了隐私计算/AI建模/区块链查询）
+1. 进入区块链网络的启动文件夹/with-blockchain
+2. 使用linux命令行运行docker-compose up拉取镜像
+3. 使用linux命令行运行ctrl+c退出镜像
+4. 划分数据，将csv数据放入delta-node（1/2/3）文件夹下的data中，数据文件名称需保持一致
+5. 使用linux命令行运行docker-compose up启动镜像
+6. 待镜像启动成功后，登入本地隐私计算平台：http://localhost:8090
+7. 使用admin账号登入平台，密码为admin
+8. 执行自定义金融安全隐私计算任务
