@@ -1,0 +1,72 @@
+2023-03-22 07:46:27.087 [info] [bucket_psi.cc:Init:211] bucket size set to 1048576
+2023-03-22 07:46:27.087 [info] [bucket_psi.cc:Init:211] bucket size set to 1048576
+2023-03-22 07:46:27.087 [info] [bucket_psi.cc:Run:103] Begin sanity check for input file: .data1/A.csv, precheck_switch:true
+2023-03-22 07:46:27.087 [info] [bucket_psi.cc:Run:103] Begin sanity check for input file: .data1/B.csv, precheck_switch:true
+2023-03-22 07:47:57.287 [info] [bucket_psi.cc:Init:211] bucket size set to 1048576
+2023-03-22 07:47:57.287 [info] [bucket_psi.cc:Run:103] Begin sanity check for input file: .data1/B.csv, precheck_switch:true
+2023-03-22 07:47:57.287 [info] [bucket_psi.cc:Init:211] bucket size set to 1048576
+2023-03-22 07:47:57.287 [info] [bucket_psi.cc:Run:103] Begin sanity check for input file: .data1/A.csv, precheck_switch:true
+2023-03-22 07:47:57.309 [info] [csv_checker.cc:CsvChecker:125] Executing duplicated scripts: LC_ALL=C sort --buffer-size=1G --temporary-directory=.data1 --stable selected-keys.1679496477308994206 | LC_ALL=C uniq -d > duplicate-keys.1679496477308994206
+2023-03-22 07:47:57.309 [info] [csv_checker.cc:CsvChecker:125] Executing duplicated scripts: LC_ALL=C sort --buffer-size=1G --temporary-directory=.data1 --stable selected-keys.1679496477308993610 | LC_ALL=C uniq -d > duplicate-keys.1679496477308993610
+2023-03-22 07:47:57.336 [info] [bucket_psi.cc:Run:121] End sanity check for input file: .data1/B.csv, size=20
+2023-03-22 07:47:57.336 [info] [bucket_psi.cc:Run:121] End sanity check for input file: .data1/A.csv, size=20
+2023-03-22 07:47:57.336 [info] [bucket_psi.cc:RunPsi:402] Run psi protocol=2, self_items_count=20
+2023-03-22 07:47:57.336 [info] [bucket_psi.cc:RunPsi:402] Run psi protocol=2, self_items_count=20
+2023-03-22 07:47:57.336 [info] [bucket_psi.cc:RunBucketPsi:638] psi protocol=2, rank=0 item_size=20
+2023-03-22 07:47:57.336 [info] [bucket_psi.cc:RunBucketPsi:638] psi protocol=2, rank=1 item_size=20
+2023-03-22 07:47:57.336 [info] [bucket_psi.cc:RunBucketPsi:648] psi protocol=2, bucket_count=1
+2023-03-22 07:47:57.336 [info] [bucket_psi.cc:RunBucketPsi:638] psi protocol=2, rank=0 item_size=20
+2023-03-22 07:47:57.337 [info] [bucket_psi.cc:RunBucketPsi:638] psi protocol=2, rank=1 item_size=20
+2023-03-22 07:47:57.337 [info] [bucket_psi.cc:RunBucketPsi:648] psi protocol=2, bucket_count=1
+2023-03-22 07:47:57.338 [info] [bucket_psi.cc:RunBucketPsi:660] run psi bucket_idx=0, bucket_item_size=20 
+2023-03-22 07:47:57.338 [info] [bucket_psi.cc:RunBucketPsi:660] run psi bucket_idx=0, bucket_item_size=20 
+2023-03-22 07:47:57.338 [info] [memory_psi.cc:Run:67] psi protocol=2, rank=0, inputs_size=20
+2023-03-22 07:47:57.338 [info] [memory_psi.cc:Run:67] psi protocol=2, rank=1, inputs_size=20
+2023-03-22 07:47:57.339 [info] [memory_psi.cc:Run:67] psi protocol=2, rank=0, inputs_size=20
+2023-03-22 07:47:57.339 [info] [memory_psi.cc:Run:67] psi protocol=2, rank=1, inputs_size=20
+2023-03-22 07:47:57.339 [info] [thread_pool.cc:ThreadPool:30] Create a fixed thread pool with size 3
+2023-03-22 07:47:57.339 [info] [thread_pool.cc:ThreadPool:30] Create a fixed thread pool with size 3
+2023-03-22 07:47:57.388 [info] [bucket_psi.cc:RunBucketPsi:671] psi protocol=2, result_size=11
+2023-03-22 07:47:57.388 [info] [bucket_psi.cc:RunBucketPsi:671] psi protocol=2, result_size=11
+2023-03-22 07:47:57.388 [info] [bucket_psi.cc:Run:161] Begin post filtering, indices.size=11, should_sort=true
+2023-03-22 07:47:57.388 [info] [bucket_psi.cc:Run:161] Begin post filtering, indices.size=11, should_sort=true
+2023-03-22 07:47:57.388 [info] [utils.cc:MultiKeySort:87] Executing sort scripts: tail -n +2 .data1/tmp-sort-in-1679496477388457040 | LC_ALL=C sort --buffer-size=3G --parallel=8 --temporary-directory=./ --stable --field-separator=, --key=1,1 >>.data1/tmp-sort-out-1679496477388457040
+2023-03-22 07:47:57.388 [info] [utils.cc:MultiKeySort:87] Executing sort scripts: tail -n +2 .data1/tmp-sort-in-1679496477388589878 | LC_ALL=C sort --buffer-size=3G --parallel=8 --temporary-directory=./ --stable --field-separator=, --key=1,1 >>.data1/tmp-sort-out-1679496477388589878
+2023-03-22 07:47:57.422 [info] [utils.cc:MultiKeySort:89] Finished sort scripts: tail -n +2 .data1/tmp-sort-in-1679496477388589878 | LC_ALL=C sort --buffer-size=3G --parallel=8 --temporary-directory=./ --stable --field-separator=, --key=1,1 >>.data1/tmp-sort-out-1679496477388589878, ret=0
+2023-03-22 07:47:57.422 [info] [bucket_psi.cc:Run:199] End post filtering, in=.data1/A.csv, out=.data1/AB_psi.csv
+2023-03-22 07:47:57.422 [info] [utils.cc:MultiKeySort:89] Finished sort scripts: tail -n +2 .data1/tmp-sort-in-1679496477388457040 | LC_ALL=C sort --buffer-size=3G --parallel=8 --temporary-directory=./ --stable --field-separator=, --key=1,1 >>.data1/tmp-sort-out-1679496477388457040, ret=0
+2023-03-22 07:47:57.422 [info] [bucket_psi.cc:Run:199] End post filtering, in=.data1/B.csv, out=.data1/B_psi.csv
+2023-03-22 07:47:57.429 [info] [bucket_psi.cc:Init:211] bucket size set to 1048576
+2023-03-22 07:47:57.429 [info] [bucket_psi.cc:Run:103] Begin sanity check for input file: .data1/C.csv, precheck_switch:true
+2023-03-22 07:47:57.441 [info] [bucket_psi.cc:Init:211] bucket size set to 1048576
+2023-03-22 07:47:57.441 [info] [bucket_psi.cc:Run:103] Begin sanity check for input file: .data1/A.csv, precheck_switch:true
+2023-03-22 07:47:57.441 [info] [csv_checker.cc:CsvChecker:125] Executing duplicated scripts: LC_ALL=C sort --buffer-size=1G --temporary-directory=.data1 --stable selected-keys.1679496477441813586 | LC_ALL=C uniq -d > duplicate-keys.1679496477441813586
+2023-03-22 07:47:57.444 [info] [csv_checker.cc:CsvChecker:125] Executing duplicated scripts: LC_ALL=C sort --buffer-size=1G --temporary-directory=.data1 --stable selected-keys.1679496477444398713 | LC_ALL=C uniq -d > duplicate-keys.1679496477444398713
+2023-03-22 07:47:57.472 [info] [bucket_psi.cc:Run:121] End sanity check for input file: .data1/C.csv, size=20
+2023-03-22 07:47:57.473 [info] [bucket_psi.cc:Run:121] End sanity check for input file: .data1/A.csv, size=20
+2023-03-22 07:47:57.473 [info] [bucket_psi.cc:RunPsi:402] Run psi protocol=2, self_items_count=20
+2023-03-22 07:47:57.473 [info] [bucket_psi.cc:RunPsi:402] Run psi protocol=2, self_items_count=20
+2023-03-22 07:47:57.474 [info] [bucket_psi.cc:RunBucketPsi:638] psi protocol=2, rank=0 item_size=20
+2023-03-22 07:47:57.474 [info] [bucket_psi.cc:RunBucketPsi:638] psi protocol=2, rank=1 item_size=20
+2023-03-22 07:47:57.474 [info] [bucket_psi.cc:RunBucketPsi:648] psi protocol=2, bucket_count=1
+2023-03-22 07:47:57.474 [info] [bucket_psi.cc:RunBucketPsi:660] run psi bucket_idx=0, bucket_item_size=20 
+2023-03-22 07:47:57.474 [info] [bucket_psi.cc:RunBucketPsi:638] psi protocol=2, rank=0 item_size=20
+2023-03-22 07:47:57.474 [info] [bucket_psi.cc:RunBucketPsi:638] psi protocol=2, rank=1 item_size=20
+2023-03-22 07:47:57.474 [info] [bucket_psi.cc:RunBucketPsi:648] psi protocol=2, bucket_count=1
+2023-03-22 07:47:57.475 [info] [bucket_psi.cc:RunBucketPsi:660] run psi bucket_idx=0, bucket_item_size=20 
+2023-03-22 07:47:57.475 [info] [memory_psi.cc:Run:67] psi protocol=2, rank=0, inputs_size=20
+2023-03-22 07:47:57.475 [info] [memory_psi.cc:Run:67] psi protocol=2, rank=1, inputs_size=20
+2023-03-22 07:47:57.475 [info] [memory_psi.cc:Run:67] psi protocol=2, rank=0, inputs_size=20
+2023-03-22 07:47:57.475 [info] [memory_psi.cc:Run:67] psi protocol=2, rank=1, inputs_size=20
+2023-03-22 07:47:57.476 [info] [thread_pool.cc:ThreadPool:30] Create a fixed thread pool with size 3
+2023-03-22 07:47:57.476 [info] [thread_pool.cc:ThreadPool:30] Create a fixed thread pool with size 3
+2023-03-22 07:47:57.506 [info] [bucket_psi.cc:RunBucketPsi:671] psi protocol=2, result_size=12
+2023-03-22 07:47:57.506 [info] [bucket_psi.cc:Run:161] Begin post filtering, indices.size=12, should_sort=true
+2023-03-22 07:47:57.506 [info] [utils.cc:MultiKeySort:87] Executing sort scripts: tail -n +2 .data1/tmp-sort-in-1679496477506665178 | LC_ALL=C sort --buffer-size=3G --parallel=8 --temporary-directory=./ --stable --field-separator=, --key=1,1 >>.data1/tmp-sort-out-1679496477506665178
+2023-03-22 07:47:57.507 [info] [bucket_psi.cc:RunBucketPsi:671] psi protocol=2, result_size=12
+2023-03-22 07:47:57.507 [info] [bucket_psi.cc:Run:161] Begin post filtering, indices.size=12, should_sort=true
+2023-03-22 07:47:57.507 [info] [utils.cc:MultiKeySort:87] Executing sort scripts: tail -n +2 .data1/tmp-sort-in-1679496477507418124 | LC_ALL=C sort --buffer-size=3G --parallel=8 --temporary-directory=./ --stable --field-separator=, --key=1,1 >>.data1/tmp-sort-out-1679496477507418124
+2023-03-22 07:47:57.518 [info] [utils.cc:MultiKeySort:89] Finished sort scripts: tail -n +2 .data1/tmp-sort-in-1679496477506665178 | LC_ALL=C sort --buffer-size=3G --parallel=8 --temporary-directory=./ --stable --field-separator=, --key=1,1 >>.data1/tmp-sort-out-1679496477506665178, ret=0
+2023-03-22 07:47:57.518 [info] [bucket_psi.cc:Run:199] End post filtering, in=.data1/A.csv, out=.data1/AC_psi.csv
+2023-03-22 07:47:57.520 [info] [utils.cc:MultiKeySort:89] Finished sort scripts: tail -n +2 .data1/tmp-sort-in-1679496477507418124 | LC_ALL=C sort --buffer-size=3G --parallel=8 --temporary-directory=./ --stable --field-separator=, --key=1,1 >>.data1/tmp-sort-out-1679496477507418124, ret=0
+2023-03-22 07:47:57.520 [info] [bucket_psi.cc:Run:199] End post filtering, in=.data1/C.csv, out=.data1/C_psi.csv
