@@ -1,0 +1,155 @@
+client:
+  organization: Org1
+  logging:
+    level: info
+
+channels:
+  mychannel:
+    peers:
+      peer0.org1.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+      peer0.org2.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+      peer0.org3.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+organizations:
+  Org1:
+    mspid: Org1MSP
+    cryptoPath: ../demo-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+    peers:
+      - peer0.org1.example.com
+  Org2:
+    mspid: Org2MSP
+    cryptoPath: ../demo-network/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp
+    peers:
+      - peer0.org2.example.com
+  Org3:
+    mspid: Org3MSP
+    cryptoPath: ../demo-network/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp
+    peers:
+      - peer0.org3.example.com
+  ordererorg:
+    mspID: OrdererMSP
+    cryptoPath: ../demo-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp
+
+orderers:
+  orderer.example.com:
+    url: grpcs://localhost:7050
+    grpcOptions:
+      ssl-target-name-override: orderer.example.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: ../demo-network/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+  orderer2.example.com:
+    url: grpcs://localhost:8050
+    grpcOptions:
+      ssl-target-name-override: orderer2.example.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: ../demo-network/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+  orderer3.example.com:
+    url: grpcs://localhost:9050
+    grpcOptions:
+      ssl-target-name-override: orderer3.example.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: ../demo-network/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+  orderer4.example.com:
+    url: grpcs://localhost:10050
+    grpcOptions:
+      ssl-target-name-override: orderer4.example.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: ../demo-network/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+  orderer5.example.com:
+    url: grpcs://localhost:11050
+    grpcOptions:
+      ssl-target-name-override: orderer5.example.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: ../demo-network/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+
+peers:
+  peer0.org1.example.com:
+    url: grpcs://localhost:7051
+    grpcOptions:
+      ssl-target-name-override: peer0.org1.example.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: ../demo-network/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem
+  peer0.org2.example.com:
+    url: grpcs://localhost:8051
+    grpcOptions:
+      ssl-target-name-override: peer0.org2.example.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: ../demo-network/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem
+  peer0.org3.example.com:
+    url: grpcs://localhost:9051
+    grpcOptions:
+      ssl-target-name-override: peer0.org3.example.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: ../demo-network/crypto-config/peerOrganizations/org3.example.com/tlsca/tlsca.org3.example.com-cert.pem
+
+entityMatchers:
+  peer:
+    - pattern: peer0.org1.example.com:(\d+)
+      mappedHost: peer0.org1.example.com
+    - pattern: peer0.org2.example.com:(\d+)
+      mappedHost: peer0.org2.example.com
+    - pattern: peer0.org3.example.com:(\d+)
+      mappedHost: peer0.org3.example.com
+  orderer:
+    - pattern: orderer.example.com:(\d+)
+      mappedHost: orderer.example.com
+    - pattern: orderer2.example.com:(\d+)
+      mappedHost: orderer2.example.com
+    - pattern: orderer3.example.com:(\d+)
+      mappedHost: orderer3.example.com
+    - pattern: orderer4.example.com:(\d+)
+      mappedHost: orderer4.example.com
+    - pattern: orderer5.example.com:(\d+)
+      mappedHost: orderer5.example.com
