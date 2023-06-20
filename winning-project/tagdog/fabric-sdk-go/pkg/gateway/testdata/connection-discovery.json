@@ -1,0 +1,57 @@
+{
+	"name": "basic-network",
+	"version": "1.0.0",
+	"client": {
+		"organization": "Org1",
+		"connection": {
+			"timeout": {
+				"peer": {
+					"endorser": "300"
+				},
+				"orderer": "300"
+			}
+		},
+		"cryptoconfig": {
+			"path": "${FABRIC_SDK_GO_PROJECT_PATH}/${CRYPTOCONFIG_FIXTURES_PATH}"
+		}
+	},
+	"organizations": {
+		"Org1": {
+			"mspid": "Org1MSP",
+			"peers": [
+				"peer0.org1.example.com"
+			],
+			"certificateAuthorities": [
+				"ca-org1"
+			]
+		}
+	},
+	"peers": {
+		"peer0.org1.example.com": {
+			"url": "grpcs://localhost:7051",
+			"grpcOptions": {
+				"hostnameOverride": "peer0.org1.example.com",
+				"ssl-target-name-override": "peer0.org1.example.com",
+				"request-timeout": 120001
+			},
+			"tlsCACerts": {
+				"path": "${FABRIC_SDK_GO_PROJECT_PATH}/${CRYPTOCONFIG_FIXTURES_PATH}/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt"
+			}
+		}
+	},
+	"certificateAuthorities": {
+		"ca-org1": {
+			"url": "https://localhost:7054",
+			"grpcOptions": {
+				"verify": true
+			},
+			"tlsCACerts": {
+				"path": "${FABRIC_SDK_GO_PROJECT_PATH}/${CRYPTOCONFIG_FIXTURES_PATH}/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem"
+			},
+			"registrar": {
+				"enrollId": "admin",
+				"enrollSecret": "adminpw"
+			}
+		}
+	}
+}

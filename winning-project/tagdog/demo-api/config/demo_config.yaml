@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  token_expire_time: 3600
+  token_secret: demo
+
+cpabe:
+  path: /root/go/src/github.com/privacy-protection/demo-network/abe-config/cp-abe
+
+kpabe:
+  master_key_path: /root/go/src/github.com/privacy-protection/demo-network/abe-config/kp-abe/master.key
+
+crypto:
+  aes_key: 1234567890123456
