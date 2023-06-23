@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/testclient.dir/test/test_client.cc.o  -o testclient  /usr/local/lib/libseal-4.1.a -pthread 

@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/abytarget/include  -g   -o CMakeFiles/poly_ay.dir/poly_ay/pppt.cpp.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/poly_ay/pppt.cpp",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/poly_ay/pppt.cpp"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/abytarget/include  -g   -o CMakeFiles/poly_ay.dir/poly_ay/mytest.cpp.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/poly_ay/mytest.cpp",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/poly_ay/mytest.cpp"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/abytarget/include  -g   -o CMakeFiles/poly_y.dir/poly_y/pppt.cpp.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/poly_y/pppt.cpp",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/poly_y/pppt.cpp"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/abytarget/include  -g   -o CMakeFiles/poly_y.dir/poly_y/mytest.cpp.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/poly_y/mytest.cpp",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/poly_y/mytest.cpp"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/abytarget/include  -g   -o CMakeFiles/circ_y.dir/circ_y/pppt.cpp.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/circ_y/pppt.cpp",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/circ_y/pppt.cpp"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/abytarget/include  -g   -o CMakeFiles/circ_y.dir/circ_y/mytest.cpp.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/circ_y/mytest.cpp",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/circ_y/mytest.cpp"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/abytarget/include  -g   -o CMakeFiles/circ_ay.dir/circ_ay/pppt.cpp.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/circ_ay/pppt.cpp",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/circ_ay/pppt.cpp"
+},
+{
+  "directory": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -I/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/abytarget/include  -g   -o CMakeFiles/circ_ay.dir/circ_ay/mytest.cpp.o -c /home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/circ_ay/mytest.cpp",
+  "file": "/home/qian_qing/my_projects/privacyPreservingLocationProximity/abyDGKBFV/aby/circ_ay/mytest.cpp"
+}
+]
