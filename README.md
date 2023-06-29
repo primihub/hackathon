@@ -4,7 +4,7 @@
 
 这里是「隐私计算 HACKATHON 大赛」的源码仓库和获奖作品源码，比赛背景、日程、奖金等信息请直接访问 [官网](https://hackathon.openmpc.com/)。
 
-本次大赛由 [PrimiHub](https://github.com/primihub/primihub)——一款由密码学专家团队打造的开源隐私计算平台赞助。
+本次大赛由 [PrimiHub](https://github.com/primihub/primihub) 一款由密码学专家团队打造的开源隐私计算平台「赞助」。
 
 ## 获奖团队项目源码
 
