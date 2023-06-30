@@ -15,7 +15,7 @@
 | ABY              | 二等奖 | 山东大学                  | [隐私保护距离计算与近邻检测协议及应用](winning-project/ABY/README.md)                     |
 | OChicken         | 三等奖 | 亚琛工业大学              | [HECTR: (Leveled) Homomorphic Encrypted Model Predictive Control](https://github.com/OChicken/HECTR/blob/main/README.md) |
 | wlss             | 三等奖 | 北京航空航天大学          | [transformer隐私保护推理](winning-project/PT/README.md)                               |
-| 隐私计算扛把子   | 三等奖 | 京东                      | [大规模数据高性能分布式PSI](winning-project/ray_psi/README.md)                                |
+| 隐私计算扛把子   | 三等奖 | 个人                      | [大规模数据高性能分布式PSI](winning-project/ray_psi/README.md)                                |
 | 北邮芯片安全小组 | 优胜奖 | 北京邮电大学              | [处理器指令集架构安全中的隐藏指令检测技术](winning-project/InstructionTest/README.md)                |
 | 0day             | 优胜奖 | 兰州理工大学              | [基于区块链的隐私保护自主身份管理](winning-project/BPSIdm/README.md)                         |
 | TagDog           | 优胜奖 | 清华大学&西安电子科技大学 | [基于区块链的隐私数据共享和检索方案](winning-project/tagdog/README.md)                       |
