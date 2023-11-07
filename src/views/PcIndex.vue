@@ -3,7 +3,7 @@
     <NavBar />
     <div class="banner">
       <div class="container">
-        <div class="button" @click="signup"></div>
+        <!-- <div class="button" @click="signup"></div> -->
       </div>
     </div>
     <b-container>
